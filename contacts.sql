@@ -1,4 +1,4 @@
---CREATE SEQUENCE contacts_sno_seq;
+CREATE SEQUENCE contacts_sno_seq;
 
 CREATE TABLE contacts
 (

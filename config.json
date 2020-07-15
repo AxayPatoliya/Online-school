@@ -3,7 +3,7 @@
     {
         "local_server": "True",
         "local_uri": "postgresql://postgres:1234@localhost/postgres",
-        "prod_uri": "postgres://dxbsohpgbmpzaf:b16433a0afe81473c413a871b9ccc46c1fd5c9aa72a6fbdcc61e8cf518d2b7dd@ec2-18-235-109-97.compute-1.amazonaws.com:5432/dbd6ib4jp02alm",
+        "prod_uri": "postgres://xogehqadqtijgs:425d00aa0ab4cdee459f47a9dfa1116c5fb00a66aafb999921fba29488294445@ec2-52-204-20-42.compute-1.amazonaws.com:5432/d157jktuhq10dg",
         "top_title": "Government Trial",
         "bottom_title": "Government Trial",
         "contact_heading": "Contact Us" ,
