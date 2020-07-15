@@ -1,0 +1,82 @@
+{% extends "layout.html" %}
+{% block body %}
+
+
+<!DOCTYPE html>
+<head>
+    <title>Teacher Info Edit Panel</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+<body>
+
+
+  
+<form action="/edit/teacher/{{sno}}" method="POST">
+    <section class="text-gray-700 body-font relative">
+        <div class="container px-5 py-24 mx-auto" style="padding-bottom: 44px;">
+          <div class="flex flex-col text-center w-full mb-12">
+            
+            
+            <h1>Basic Actions</h1>
+            
+            <a href="/dashboard"><button class="btn btn-warning">Dashboard Home</button></a>
+            
+            
+            <hr>
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Fill the credentials.</h1>
+            
+          </div>
+          <div class="lg:w-1/2 md:w-2/3 mx-auto">
+            <div class="flex flex-wrap -m-2">
+              
+                <div class="p-2 w-1/2">
+                <label style="text-align: center;">Name</label>
+                <input value="{{teacher.name}}" id="name" name="name" class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base px-4 py-2" placeholder="Name" type="text">
+              </div>
+
+              <div class="p-2 w-1/2">
+                <label style="text-align: center;">Info</label>
+                <input value="{{teacher.info}}" id="info" name="info" class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base px-4 py-2" placeholder="Info" type="text">
+              </div>
+
+              <div class="p-2 w-1/2">
+                <label style="text-align: center;">role</label>
+                <input value="{{teacher.role}}" id="role" name="role" class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base px-4 py-2" placeholder="Role" type="text">
+              </div>
+              
+              <div class="p-2 w-1/2">
+                <label style="text-align: center;">Image File</label>
+                <input value="{{teacher.img_file}}" id="img_file" name="img_file" class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base px-4 py-2" placeholder="Image File" type="text">
+              </div>
+
+              <div class="p-2 w-full">
+                <button type="submit" class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Submit</button>
+              </div>
+              
+              
+            </div>
+           
+          </div>
+        
+        </div>
+      </section>
+      </form> 
+
+</body>
+</html>
+    
+</body>
+</html>
+
+
+
+
+
+{% endblock %}
+
+    
+

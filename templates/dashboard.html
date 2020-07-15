@@ -1,0 +1,269 @@
+{% extends "layout.html" %}
+{% block body %}
+
+
+<!DOCTYPE html>
+<head>
+    <title>Dashboard</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+<body>
+
+
+<hr>
+    <h1>Upload A File</h1>
+<form action="/uploader" method="POST" enctype="multipart/form-data">
+    <input type="file" name="file1"></input>
+    <hr>
+    <button class="btn btn-success" type="submit">Submit</button>
+</form>    
+<hr>
+    
+<h1>Basic Actions For Notices</h1>
+<a href="/edit/0"><button class="btn btn-warning">Add a new post</button></a>
+<a href="/logout"><button class="btn btn-danger">Logout</button></a>
+<hr>
+
+
+<h1 style="text-align: center;">Edit Notices</h1>
+<hr>
+    <table class="table">
+        <thead>
+          <tr>
+            <th>Sno</th>
+            <th>Category</th>
+            <th>Date</th>
+            <th>Edit</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+            {% for notice in notice %}
+            <tr>
+            <td>{{notice.sno}}</td>
+            <td>{{notice.category}}</td>
+            <td>{{notice.date}}</td>
+            <td><a href="/edit/{{notice.sno}}"><button type="button" class="btn btn-info">Edit</button></a></td>
+            <td><a href="/delete/{{notice.sno}}"><button type="button" class="btn btn-danger">Delete</button></a></td>
+          </tr>
+          
+          {% endfor %}
+       
+       
+        </tbody>
+      </table>
+
+
+
+      <hr>
+
+      <h1>Basic Actions For Scrolling Notice</h1>
+      <a href="/edit/scroll/0"><button class="btn btn-warning">Add a new post</button></a>
+      <a href="/logout"><button class="btn btn-danger">Logout</button></a>
+      <hr>
+
+      <h1 style="text-align: center;">Edit Scrolling Notices</h1>
+      <hr>
+    <table class="table">
+        <thead>
+          <tr>
+            <th>Sno</th>
+            <th>Scroll Notice</th>
+            <th>Date</th>
+            <th>Edit</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+            {% for scroll in scroll %}
+            <tr>
+            <td>{{scroll.sno}}</td>
+            <td>{{scroll.scroll_notice}}</td>
+            <td>{{scroll.date}}</td>
+            <td><a href="/edit/scroll/{{scroll.sno}}"><button type="button" class="btn btn-info">Edit</button></a></td>
+            <td><a href="/delete/scroll/{{scroll.sno}}"><button type="button" class="btn btn-danger">Delete</button></a></td>
+          </tr>
+          
+          {% endfor %}
+       
+       
+        </tbody>
+      </table>
+
+
+
+      <hr>
+      <h1>Basic Actions For Principal's Info</h1>
+      <a href="/edit/principal/0"><button class="btn btn-warning">Add a new post</button></a>
+      <a href="/logout"><button class="btn btn-danger">Logout</button></a>
+      <hr>
+
+      <h1 style="text-align: center;">Edit Principal's Info</h1>
+      <hr>
+    <table class="table">
+        <thead>
+          <tr>
+            <th>Sno</th>
+            <th>Principal's name</th>
+            <th>Principal's Info</th>
+            <th>Edit</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+            {% for principal in principal %}
+            <tr>
+            <td>{{principal.sno}}</td>
+            <td>{{principal.name}}</td>
+            <td>{{principal.info}}</td>
+            
+            <td><a href="/edit/principal/{{principal.sno}}"><button type="button" class="btn btn-info">Edit</button></a></td>
+            <td><a href="/delete/principal/{{principal.sno}}"><button type="button" class="btn btn-danger">Delete</button></a></td>
+          </tr>
+          
+          {% endfor %}
+       
+       
+        </tbody>
+      </table>
+       
+
+
+      <hr>
+      <h1>Basic Actions For Teacher's Info</h1>
+      <a href="/edit/teacher/0"><button class="btn btn-warning">Add a new post</button></a>
+      <a href="/logout"><button class="btn btn-danger">Logout</button></a>
+      <hr>
+
+      <h1 style="text-align: center;">Edit Teacher's Info</h1>
+      <hr>
+    <table class="table">
+        <thead>
+          <tr>
+            <th>Sno</th>
+            <th>Teacher's name</th>
+            <th>Teacher's role</th>
+            <th>Edit</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+            {% for teacher in teacher %}
+            <tr>
+            <td>{{teacher.sno}}</td>
+            <td>{{teacher.name}}</td>
+            
+            <td>{{teacher.role}}</td>
+            
+            <td><a href="/edit/teacher/{{teacher.sno}}"><button type="button" class="btn btn-info">Edit</button></a></td>
+            <td><a href="/delete/teacher/{{teacher.sno}}"><button type="button" class="btn btn-danger">Delete</button></a></td>
+          </tr>
+          
+          {% endfor %}
+       
+       
+        </tbody>
+      </table>
+
+
+
+      <hr>
+      <h1>Basic Actions For Clerk's Info</h1>
+      <a href="/edit/clerk/0"><button class="btn btn-warning">Add a new post</button></a>
+      <a href="/logout"><button class="btn btn-danger">Logout</button></a>
+      <hr>
+
+      <h1 style="text-align: center;">Edit Clerk's Info</h1>
+      <hr>
+    <table class="table">
+        <thead>
+          <tr>
+            <th>Sno</th>
+            <th>Clerk's name</th>
+            <th>Clerk's role</th>
+            <th>Edit</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+            {% for clerk in clerk %}
+            <tr>
+            <td>{{clerk.sno}}</td>
+            <td>{{clerk.name}}</td>
+            
+            <td>{{clerk.role}}</td>
+            
+            <td><a href="/edit/clerk/{{clerk.sno}}"><button type="button" class="btn btn-info">Edit</button></a></td>
+            <td><a href="/delete/clerk/{{clerk.sno}}"><button type="button" class="btn btn-danger">Delete</button></a></td>
+          </tr>
+          
+          {% endfor %}
+       
+       
+        </tbody>
+      </table>
+
+
+
+
+      <hr>
+      <h1>Basic Actions For Other Staff's Info</h1>
+      <a href="/edit/other-staff/0"><button class="btn btn-warning">Add a new post</button></a>
+      <a href="/logout"><button class="btn btn-danger">Logout</button></a>
+      <hr>
+
+      <h1 style="text-align: center;">Edit other staff's Info</h1>
+      <hr>
+    <table class="table">
+        <thead>
+          <tr>
+            <th>Sno</th>
+            <th>Other Staff's name</th>
+            <th>Other staff's role</th>
+            <th>Edit</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+            {% for other in other %}
+            <tr>
+            <td>{{other.sno}}</td>
+            <td>{{other.name}}</td>
+            
+            <td>{{other.role}}</td>
+            
+            <td><a href="/edit/other-staff/{{other.sno}}"><button type="button" class="btn btn-info">Edit</button></a></td>
+            <td><a href="/delete/other-staff/{{other.sno}}"><button type="button" class="btn btn-danger">Delete</button></a></td>
+          </tr>
+          
+          {% endfor %}
+       
+       
+        </tbody>
+      </table>
+
+
+
+</body>
+</html>
+    
+
+
+
+
+
+
+{% endblock %}
+
+    
+

@@ -1,0 +1,30 @@
+{
+    "params":
+    {
+        "local_server": "True",
+        "local_uri": "postgresql://postgres:1234@localhost/postgres",
+        "prod_uri": "postgres://dxbsohpgbmpzaf:b16433a0afe81473c413a871b9ccc46c1fd5c9aa72a6fbdcc61e8cf518d2b7dd@ec2-18-235-109-97.compute-1.amazonaws.com:5432/dbd6ib4jp02alm",
+        "top_title": "Government Trial",
+        "bottom_title": "Government Trial",
+        "contact_heading": "Contact Us" ,
+        "contact_tagline": "You can leave a message for us here of you can send us your questions or query.",
+        "staff_heading": "OUR TEAM",
+        "staff_tagline": "This is a list of our staff members.",
+        "director_heading": "This is our Director",
+        "director_tagline": "Directors qualifications",
+        "about_heading": "About us.",
+        "about_tagline": "This is what we do",
+        "mail-id": "dailyblogs.team@gmail.com",
+        "mail-password": "dailyblogs1298",
+        "no_of_notice": 2,
+        "login_image": "20200608_110050_0000.png",
+        "admin_user": "harry",
+        "admin_password": "subscribenow",
+        "upload_location": "C:\\Users\\Lenovo\\PycharmProjects\\govt-trial\\static\\img"    
+
+
+
+
+    }
+
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="{{ url_for('static', filename='img/20200608_110050_0000.png') }}">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <title>Govt. Trial
+    </title>
+</head>
+<body>
+    <header class="text-gray-700 body-font" style="background: #e6e4ef;">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+            
+            <img style="padding: 0%;" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" src="{{url_for('static', filename = 'img/20200608_110050_0000.png')}}">
+
+            
+            
+          
+          <div class="ml-3 text-xl" style="color: black;">
+            <a type="button" href='/'>{{params['top_title']}}</a>
+          </div >
+          
+          
+        
+        </a>
+          <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+            <a class="mr-5 hover:text-gray-900" href="/">Home</a>
+            <a class="mr-5 hover:text-gray-900" href="/about">About</a>
+            <a class="mr-5 hover:text-gray-900" href="/contact">Contact</a>
+            <a class="mr-5 hover:text-gray-900" href="/notice-list">Notices</a>
+            <a class="mr-5 hover:text-gray-900" href="/staff-info">Staff Info</a>
+            
+            
+          </nav>
+          
+        </div>
+      </header>
+
+      <section class="text-gray-700 body-font overflow-hidden" style="background: aliceblue;">
+        <div class="container px-5 py-24 mx-auto" style="margin-bottom: -65px; padding-top: 18px;">
+          <div class="-my-8">
+            
+
+            {% for notice in notice %}
+            <div class="py-8 flex flex-wrap md:flex-no-wrap">
+              <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                <span class="tracking-widest font-medium title-font text-gray-900">{{notice.category}}</span>
+                <span class="mt-1 text-gray-500 text-sm">{{notice.date}}</span>
+              </div>
+              <div class="md:flex-grow" style="margin-left: 50px;">
+                <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">{{notice.title}}</h2>
+                <p class="leading-relaxed">{{notice.content[0:13]}}...</p>
+                <a type="button" href="/notice/{{notice.slug}}" class="text-indigo-500 inline-flex items-center mt-4">Read More
+                  <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14"></path>
+                    <path d="M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+                
+              </div>
+            </div>
+            <hr>
+            
+            
+            {% endfor %}
+           
+        </div>
+    </div>
+  </section>
+
+      <footer class="text-gray-700 body-font" style="background:#e6e4ef;">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+          <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+            <img style="padding: 0%;" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" src="{{url_for('static', filename = 'img/20200608_110050_0000.png')}}">
+
+           
+            <div class="ml-3 text-xl" style="color: black;">
+              <a type="button" href="/">{{params['bottom_title']}}</a>
+            </div>
+          
+          
+          </a>
+          <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">Govt. Trial —
+            <a class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">@govttrial</a>
+          </p>
+         
+        </div>
+      </footer>
+    
+</body>
+</html>

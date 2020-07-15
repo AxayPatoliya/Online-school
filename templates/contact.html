@@ -1,0 +1,62 @@
+{% extends "layout.html" %}
+{% block body %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact page</title>
+    
+    
+
+</head>
+<body>
+    <form class="mb-0" action="/contact" method="POST">
+    <section class="text-gray-700 body-font relative">
+        <div class="container px-5 py-24 mx-auto" style="padding-bottom: 44px;">
+          <div class="flex flex-col text-center w-full mb-12">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">{{params['contact_heading']}}</h1>
+            <h3 class="lg:w-2/3 mx-auto leading-relaxed text-base">{{params['contact_tagline']}}</h3>
+          </div>
+            
+          <div class="lg:w-1/2 md:w-2/3 mx-auto">
+            <div class="flex flex-wrap -m-2">
+              <div class="p-2 w-1/2">
+                <input id="name" name="name" class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base px-4 py-2" placeholder="Name" type="text">
+              </div>
+              <div class="p-2 w-1/2">
+                <input id="email" name="email" class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base px-4 py-2" placeholder="Mobile No" type="number">
+              </div>
+              <div class="p-2 w-full">
+                <textarea id="query" name="query" class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none h-48 focus:border-indigo-500 text-base px-4 py-2 resize-none block" placeholder="Message/Query"></textarea>
+              </div>
+              <div class="p-2 w-full">
+                <button type="submit" class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Send</button>
+              </div>
+              
+              <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
+                <a class="text-indigo-500">example@email.com</a>
+                <p class="leading-normal my-5">49 Smith St.
+                  <br>Saint Cloud, MN 56301
+                </p>
+                
+              </div>
+            </div>
+           
+          </div>
+        
+        </div>
+      </section>
+      </form>
+    
+</body>
+</html>
+
+
+
+
+
+
+{% endblock %}

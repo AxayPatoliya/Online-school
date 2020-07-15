@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aboout section</title>
+</head>
+<body>
+    {% for notice in notice %}
+    <marquee style="background-color: chartreuse;" scrollmount="1" direction="up" height="100%" width="50%" bgcolor="white">
+        <h3 style="text-align: center;"><a href="/notice/{{notice.slug}}">{{notice.category}}<br>{{notice.title}}<br>{{notice.date}}</a></h3>
+
+    </marquee>
+    {% endfor %}
+
+</body>
+</html>
+
+{% endblock %}
