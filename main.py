@@ -35,6 +35,7 @@ else:
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
+db.init_app(app)
 
 class Contacts(db.Model):
     sno = db.Column(db.Integer, primary_key=True, autoincrement=True)
