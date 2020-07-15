@@ -1,3 +1,3 @@
 INSERT INTO scroll(
 	sno, scroll_notice, date)
-	VALUES (1, 'Write the first scroll notice here', 's0s0-07-14');
+	VALUES (1, 'Write the first scroll notice here', '2020-07-14');
