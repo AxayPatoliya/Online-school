@@ -459,4 +459,5 @@ def notice_route(notice_slug):
 def notice1():
     return  render_template('notice1.html', params=params, notice=notice)
 
-app.run(debug=True)
+if __name__ == '__main__':
+    app.run(debug=True)
