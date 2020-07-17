@@ -85,6 +85,31 @@ class Other(db.Model):
     role = db.Column(db.String(12), nullable=False)
     img_file = db.Column(db.String(12), nullable=False)
 
+class S9(db.Model):
+    sno = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    name = db.Column(db.String(80), nullable=False)
+    decr = db.Column(db.String(12), nullable=False)
+
+class S10(db.Model):
+    sno = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    name = db.Column(db.String(80), nullable=False)
+    decr = db.Column(db.String(12), nullable=False)
+
+class S11(db.Model):
+    sno = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    name = db.Column(db.String(80), nullable=False)
+    decr = db.Column(db.String(12), nullable=False)
+
+class S12(db.Model):
+    sno = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    name = db.Column(db.String(80), nullable=False)
+    decr = db.Column(db.String(12), nullable=False)
+
+class L9(db.Model):
+    sno = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    name = db.Column(db.String(80), nullable=False)
+    decr = db.Column(db.String(12), nullable=False)
+
 @app.route("/uploader", methods = ['GET', 'POST'])
 def uploader():
     if ('user' in session and session['user'] == params['admin_user']):
@@ -161,6 +186,56 @@ def delete_other(sno):
         db.session.commit()
     return redirect('/dashboard')
 
+# deleting point for s9
+
+@app.route("/delete/s9/<string:sno>", methods = ['GET', 'POST'])
+def delete_s9(sno):
+    if ('user' in session and session['user'] == params['admin_user']):
+        s9 = S9.query.filter_by(sno=sno).first()
+        db.session.delete(s9)
+        db.session.commit()
+    return redirect('/dashboard')
+
+# deleting point for s10
+
+@app.route("/delete/s10/<string:sno>", methods = ['GET', 'POST'])
+def delete_s10(sno):
+    if ('user' in session and session['user'] == params['admin_user']):
+        s10 = S10.query.filter_by(sno=sno).first()
+        db.session.delete(s10)
+        db.session.commit()
+    return redirect('/dashboard')
+
+# deleting point for s11
+
+@app.route("/delete/s11/<string:sno>", methods = ['GET', 'POST'])
+def delete_s11(sno):
+    if ('user' in session and session['user'] == params['admin_user']):
+        s11 = S11.query.filter_by(sno=sno).first()
+        db.session.delete(s11)
+        db.session.commit()
+    return redirect('/dashboard')
+
+# deleting point for s12
+
+@app.route("/delete/s12/<string:sno>", methods = ['GET', 'POST'])
+def delete_s12(sno):
+    if ('user' in session and session['user'] == params['admin_user']):
+        s12 = S12.query.filter_by(sno=sno).first()
+        db.session.delete(s12)
+        db.session.commit()
+    return redirect('/dashboard')
+
+# deleting point for l9
+
+@app.route("/delete/l9/<string:sno>", methods = ['GET', 'POST'])
+def delete_l9(sno):
+    if ('user' in session and session['user'] == params['admin_user']):
+        l9 = L9.query.filter_by(sno=sno).first()
+        db.session.delete(l9)
+        db.session.commit()
+    return redirect('/dashboard')
+
 @app.route("/", methods=["GET","POST"])
 def home():
     if request.method == 'POST':
@@ -171,11 +246,6 @@ def home():
         db.session.commit()
     scroll = Scroll.query.filter_by().all()
     return render_template('index.html', params=params, scroll=scroll)
-
-@app.route("/about")
-def about():
-    notice = Notice.query.filter_by().all()
-    return  render_template('about.html', params=params, notice=notice)
 
 @app.route("/contact", methods=["GET","POST"])
 def contact():
@@ -204,7 +274,12 @@ def dashboard():
         teacher = Teacher.query.all()
         clerk = Clerk.query.all()
         other = Other.query.all()
-        return render_template('dashboard.html', params=params, notice=notice, scroll=scroll, principal=principal, teacher=teacher, clerk=clerk, other=other)
+        s9 = S9.query.all()
+        s10 = S10.query.all()
+        s11 = S11.query.all()
+        s12 = S12.query.all()
+        l9 = L9.query.all()
+        return render_template('dashboard.html', params=params, notice=notice, scroll=scroll, principal=principal, teacher=teacher, clerk=clerk, other=other, s9=s9, s10=s10, s11=s11, s12=s12, l9=l9)
 
 
     if request.method == 'POST':
@@ -392,6 +467,125 @@ def edit_other(sno):
             other = Other.query.filter_by(sno=sno).first()
             return render_template('edit_otherstaff.html', params=params, other=other, sno=sno)
 
+# edit section for the s9
+
+@app.route("/edit/s9/<string:sno>", methods=["GET","POST"])
+def edit_s9(sno):
+        if ('user' in session and session['user'] == params['admin_user']):
+            if request.method == 'POST':
+                name = request.form.get('name')
+                decr = request.form.get('decr')
+
+                if sno == '0':
+                    s9 = S9(name=name, decr=decr)
+                    db.session.add(s9)
+                    db.session.commit()
+
+                else:
+                    s9 = S9.query.filter_by(sno=sno).first()
+                    s9.name = name
+                    s9.decr = decr
+                    db.session.commit()
+                    return redirect('/edit/s9/'+sno)
+
+            s9 = S9.query.filter_by(sno=sno).first()
+            return render_template('edit_s9.html', params=params, s9=s9, sno=sno)
+
+# edit section for the s10
+
+@app.route("/edit/s10/<string:sno>", methods=["GET","POST"])
+def edit_s10(sno):
+        if ('user' in session and session['user'] == params['admin_user']):
+            if request.method == 'POST':
+                name = request.form.get('name')
+                decr = request.form.get('decr')
+
+                if sno == '0':
+                    s10 = S10(name=name, decr=decr)
+                    db.session.add(s10)
+                    db.session.commit()
+
+                else:
+                    s10 = S10.query.filter_by(sno=sno).first()
+                    s10.name = name
+                    s10.decr = decr
+                    db.session.commit()
+                    return redirect('/edit/s10/'+sno)
+
+            s10 = S10.query.filter_by(sno=sno).first()
+            return render_template('edit_s10.html', params=params, s10=s10, sno=sno)
+
+# edit section for the s11
+
+@app.route("/edit/s11/<string:sno>", methods=["GET","POST"])
+def edit_s11(sno):
+        if ('user' in session and session['user'] == params['admin_user']):
+            if request.method == 'POST':
+                name = request.form.get('name')
+                decr = request.form.get('decr')
+
+                if sno == '0':
+                    s11 = S11(name=name, decr=decr)
+                    db.session.add(s11)
+                    db.session.commit()
+
+                else:
+                    s11 = S11.query.filter_by(sno=sno).first()
+                    s11.name = name
+                    s11.decr = decr
+                    db.session.commit()
+                    return redirect('/edit/s11/'+sno)
+
+            s11 = S11.query.filter_by(sno=sno).first()
+            return render_template('edit_s11.html', params=params, s11=s11, sno=sno)
+
+# edit section for the s12
+
+@app.route("/edit/s12/<string:sno>", methods=["GET","POST"])
+def edit_s12(sno):
+        if ('user' in session and session['user'] == params['admin_user']):
+            if request.method == 'POST':
+                name = request.form.get('name')
+                decr = request.form.get('decr')
+
+                if sno == '0':
+                    s12 = S12(name=name, decr=decr)
+                    db.session.add(s12)
+                    db.session.commit()
+
+                else:
+                    s12 = S12.query.filter_by(sno=sno).first()
+                    s12.name = name
+                    s12.decr = decr
+                    db.session.commit()
+                    return redirect('/edit/s12/'+sno)
+
+            s12 = S12.query.filter_by(sno=sno).first()
+            return render_template('edit_s12.html', params=params, s12=s12, sno=sno)
+
+# edit section for the l9
+
+@app.route("/edit/l9/<string:sno>", methods=["GET","POST"])
+def edit_l9(sno):
+        if ('user' in session and session['user'] == params['admin_user']):
+            if request.method == 'POST':
+                name = request.form.get('name')
+                decr = request.form.get('decr')
+
+                if sno == '0':
+                    l9 = L9(name=name, decr=decr)
+                    db.session.add(l9)
+                    db.session.commit()
+
+                else:
+                    l9 = L9.query.filter_by(sno=sno).first()
+                    l9.name = name
+                    l9.decr = decr
+                    db.session.commit()
+                    return redirect('/edit/l9/'+sno)
+
+            l9 = L9.query.filter_by(sno=sno).first()
+            return render_template('edit_l9.html', params=params, l9=l9, sno=sno)
 
 
 @app.route("/staff-info")
@@ -448,6 +642,97 @@ def otherstaff():
         db.session.commit()
     other = Other.query.filter_by().all()
     return  render_template('otherstaff.html', params=params, other=other)
+
+@app.route("/subject-9/list-9/<string:name>", methods=["GET", "POST"])
+def list_9(name):
+    if request.method == 'POST':
+        name = request.form.get('name')
+        decr = request.form.get('decr')
+        l9 = L9(name=name, decr=decr)
+        db.session.add(l9)
+        db.session.commit()
+    l9 = L9.query.filter_by().all()
+    
+    return  render_template('list_9.html', params=params, name=name, l9=l9)
+
+@app.route("/subject-10/list-10/<string:name>")
+def list_10(name):
+    
+    return  render_template('list_10.html', params=params, name=name)
+
+@app.route("/subject-11/list-11/<string:name>", methods=["GET", "POST"])
+def list_11(name):
+    if request.method == 'POST':
+        name = request.form.get('name')
+        decr = request.form.get('decr')
+        l9 = L9(name=name, decr=decr)
+        db.session.add(l9)
+        db.session.commit()
+    l9 = L9.query.filter_by().all()
+    
+    return  render_template('list_11.html', params=params, name=name, l9=l9)
+
+@app.route("/subject-12/list-12/<string:name>", methods=["GET", "POST"])
+def list_12(name):
+    if request.method == 'POST':
+        name = request.form.get('name')
+        decr = request.form.get('decr')
+        l9 = L9(name=name, decr=decr)
+        db.session.add(l9)
+        db.session.commit()
+    l9 = L9.query.filter_by().all()
+    
+    return  render_template('list_12.html', params=params, name=name, l9=l9)
+
+
+@app.route("/subject-9", methods=["GET", "POST"])
+def subject_9():
+    if request.method == 'POST':
+        name = request.form.get('name')
+        decr = request.form.get('decr')
+        s9 = S9(name=name, decr=decr)
+        db.session.add(s9)
+        db.session.commit()
+    s9 = S9.query.filter_by().all()
+    return  render_template('subject_9.html', params=params, s9=s9)
+
+@app.route("/subject-10", methods=["GET", "POST"])
+def subject_10():
+    if request.method == 'POST':
+        name = request.form.get('name')
+        decr = request.form.get('decr')
+        s10 = S10(name=name, decr=decr)
+        db.session.add(s10)
+        db.session.commit()
+    s10 = S10.query.filter_by().all()
+    return  render_template('subject_10.html', params=params, s10=s10)
+
+@app.route("/subject-11", methods=["GET", "POST"])
+def subject_11():
+    if request.method == 'POST':
+        name = request.form.get('name')
+        decr = request.form.get('decr')
+        s11 = S10(name=name, decr=decr)
+        db.session.add(s11)
+        db.session.commit()
+    s11 = S11.query.filter_by().all()
+    return  render_template('subject_11.html', params=params, s11=s11)
+
+@app.route("/subject-12", methods=["GET", "POST"])
+def subject_12():
+    if request.method == 'POST':
+        name = request.form.get('name')
+        decr = request.form.get('decr')
+        s12 = S12(name=name, decr=decr)
+        db.session.add(s12)
+        db.session.commit()
+    s12 = S12.query.filter_by().all()
+    return  render_template('subject_12.html', params=params, s12=s12)
+
+
+@app.route("/standard")
+def standard():
+    return  render_template('standard.html', params=params)
 
 @app.route("/notice/<string:notice_slug>", methods = ["GET"])
 def notice_route(notice_slug):
