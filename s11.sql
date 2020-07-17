@@ -1,5 +1,5 @@
 CREATE SEQUENCE s11_sno_seq;
-CREATE TABLE public.s11
+CREATE TABLE s11
 (
     sno integer NOT NULL DEFAULT nextval('s11_sno_seq'::regclass),
     name text COLLATE pg_catalog."default" NOT NULL,
