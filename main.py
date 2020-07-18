@@ -641,7 +641,8 @@ def otherstaff():
         db.session.add(other)
         db.session.commit()
     other = Other.query.filter_by().all()
-    return  render_template('otherstaff.html', params=params, other=other)
+    return render_template('otherstaff.html', params=params, other=other)
+
 
 @app.route("/subject-9/list-9/<string:name>", methods=["GET", "POST"])
 def list_9(name):
@@ -652,37 +653,35 @@ def list_9(name):
         db.session.add(l9)
         db.session.commit()
     l9 = L9.query.filter_by().all()
-    
-    return  render_template('list_9.html', params=params, name=name, l9=l9)
+    if name == 'Maths':
+        return  render_template('list_9.html', params=params, name=name, l9=l9)   
+    elif name=='Chemistry':
+        return "This is a Chemistry subject"
+    elif name =='Physics':
+        return "This is a Physics subject"
+    elif name=='English':
+        return "This is a English subject"
+
+
+
+
 
 @app.route("/subject-10/list-10/<string:name>")
 def list_10(name):
-    
-    return  render_template('list_10.html', params=params, name=name)
+    return render_template('list_10.html', params=params, name=name)
 
-@app.route("/subject-11/list-11/<string:name>", methods=["GET", "POST"])
+    
+    
+    
+    
+
+@app.route("/subject-11/list-11/<string:name>")
 def list_11(name):
-    if request.method == 'POST':
-        name = request.form.get('name')
-        decr = request.form.get('decr')
-        l9 = L9(name=name, decr=decr)
-        db.session.add(l9)
-        db.session.commit()
-    l9 = L9.query.filter_by().all()
-    
-    return  render_template('list_11.html', params=params, name=name, l9=l9)
+    return  render_template('list_11.html', params=params, name=name)
 
-@app.route("/subject-12/list-12/<string:name>", methods=["GET", "POST"])
+@app.route("/subject-12/list-12/<string:name>")
 def list_12(name):
-    if request.method == 'POST':
-        name = request.form.get('name')
-        decr = request.form.get('decr')
-        l9 = L9(name=name, decr=decr)
-        db.session.add(l9)
-        db.session.commit()
-    l9 = L9.query.filter_by().all()
-    
-    return  render_template('list_12.html', params=params, name=name, l9=l9)
+    return  render_template('list_12.html', params=params, name=name)
 
 
 @app.route("/subject-9", methods=["GET", "POST"])
