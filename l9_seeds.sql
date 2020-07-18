@@ -1,3 +1,3 @@
 INSERT INTO l9(
-	sno, name, decr)
-	VALUES (1, 'Addition', 'Learn how to perform addition');
+	sno, name, decr, pdf_decr1, pdf_file1, pdf_decr2, pdf_file2, pdf_decr3, pdf_file3, video_decr1, video_file1, video_decr2, video_file2, video_decr3, video_file3)
+	VALUES (1, 'Addition', 'You are going to learn how to perform addition.', 'Refer this PDF for exercise. Click', 'python tut book.pdf', 'Refer this PDF for upcoming exams. Click', 'python tut book.pdf', 'Refer this PDF as your home-work. Click', 'python tut book.pdf', 'Video for the Addition. Click', 'https://www.youtube.com/', 'Video for higher level additions. Click', 'https://www.youtube.com/', 'video for your exercise. Click', 'https://www.youtube.com/');

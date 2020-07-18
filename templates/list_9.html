@@ -6,6 +6,9 @@
       <div class="flex flex-wrap w-full">
         <div class="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6">
           {% for l9 in l9 %}
+          {% set fname = 'img/' + l9.pdf_file1 %}
+          {% set ffname = 'img/' + l9.pdf_file2 %}
+          {% set fffname = 'img/' + l9.pdf_file3 %}
             <div class="flex relative pb-12">
             <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
               <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
@@ -17,9 +20,40 @@
             <div class="flex-grow pl-4">
               <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">{{l9.name}}</h2>
               <p class="leading-relaxed">{{l9.decr}}</p>
-              <p class="leading-relaxed">You can collact the material regarding the subject and topic from
-                  <a style="color:indigo;" target="_blank" type="button" href="{{ url_for('static', filename='img/python tut book.pdf') }}">HERE.</a> 
+              
+              
+              <p class="leading-relaxed">{{l9.pdf_decr1}}
+                  <a style="color:indigo;" target="_blank" type="button" href="{{ url_for('static', filename=fname) }}">HERE.</a> 
               </p>
+
+              <p class="leading-relaxed">{{l9.video_decr1}}
+                <a style="color:indigo;" target="_blank" type="button" href="{{l9.video_file1}}">HERE.</a> 
+            </p>
+
+              <p class="leading-relaxed">{{l9.pdf_decr2}}
+                <a style="color:indigo;" target="_blank" type="button" href="{{ url_for('static', filename=ffname) }}">HERE.</a> 
+            </p>
+
+            <p class="leading-relaxed">{{l9.video_decr2}}
+                <a style="color:indigo;" target="_blank" type="button" href="{{l9.video_file2}}">HERE.</a> 
+            </p>
+
+            <p class="leading-relaxed">{{l9.pdf_decr3}}
+                <a style="color:indigo;" target="_blank" type="button" href="{{ url_for('static', filename=fffname) }}">HERE.</a> 
+            </p>
+
+            <p class="leading-relaxed">{{l9.video_decr3}}
+                <a style="color:indigo;" target="_blank" type="button" href="{{l9.video_file3}}">HERE.</a> 
+            </p>
+
+
+
+            
+
+            
+
+            
+
             </div>
           </div>
           {% endfor %}

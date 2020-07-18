@@ -109,6 +109,18 @@ class L9(db.Model):
     sno = db.Column(db.Integer, primary_key=True, autoincrement=True)
     name = db.Column(db.String(80), nullable=False)
     decr = db.Column(db.String(12), nullable=False)
+    pdf_decr1 = db.Column(db.String(12), nullable=False)
+    pdf_file1 = db.Column(db.String(12), nullable=False)
+    pdf_decr2 = db.Column(db.String(12), nullable=False)
+    pdf_file2 = db.Column(db.String(12), nullable=False)
+    pdf_decr3 = db.Column(db.String(12), nullable=False)
+    pdf_file3 = db.Column(db.String(12), nullable=False)
+    video_decr1 = db.Column(db.String(12), nullable=False)
+    video_file1 = db.Column(db.String(12), nullable=False)
+    video_decr2 = db.Column(db.String(12), nullable=False)
+    video_file2 = db.Column(db.String(12), nullable=False)
+    video_decr3 = db.Column(db.String(12), nullable=False)
+    video_file3 = db.Column(db.String(12), nullable=False)
 
 @app.route("/uploader", methods = ['GET', 'POST'])
 def uploader():
@@ -571,9 +583,21 @@ def edit_l9(sno):
             if request.method == 'POST':
                 name = request.form.get('name')
                 decr = request.form.get('decr')
+                pdf_decr1 = request.form.get('pdf_decr1') 
+                pdf_file1 = request.form.get('pdf_file1')
+                pdf_decr2 = request.form.get('pdf_decr2') 
+                pdf_file2 = request.form.get('pdf_file2')
+                pdf_decr3 = request.form.get('pdf_decr3') 
+                pdf_file3 = request.form.get('pdf_file3')
+                video_decr1 = request.form.get('video_decr1') 
+                video_file1 = request.form.get('video_file1')
+                video_decr2 = request.form.get('video_decr2') 
+                video_file2 = request.form.get('video_file2')
+                video_decr3 = request.form.get('video_decr3') 
+                video_file3 = request.form.get('video_file3')
 
                 if sno == '0':
-                    l9 = L9(name=name, decr=decr)
+                    l9 = L9(name=name, decr=decr, pdf_decr1=pdf_decr1, pdf_decr2=pdf_decr2, pdf_decr3=pdf_decr3, video_decr1=video_decr1, video_decr2=video_decr2, video_decr3=video_decr3, pdf_file1=pdf_file1, pdf_file2=pdf_file2, pdf_file3=pdf_file3, video_file1=video_file1, video_file2=video_file2, video_file3=video_file3)
                     db.session.add(l9)
                     db.session.commit()
 
@@ -581,6 +605,18 @@ def edit_l9(sno):
                     l9 = L9.query.filter_by(sno=sno).first()
                     l9.name = name
                     l9.decr = decr
+                    l9.pdf_decr1 = pdf_decr1
+                    l9.pdf_file1 = pdf_file1
+                    l9.pdf_decr2 = pdf_decr2
+                    l9.pdf_file2 = pdf_file2
+                    l9.pdf_decr3 = pdf_decr3
+                    l9.pdf_file3 = pdf_file3
+                    l9.video_decr1 = video_decr1
+                    l9.video_file1 = video_file1
+                    l9.video_decr2 = video_decr2
+                    l9.video_file2 = video_file2
+                    l9.video_decr3 = video_decr3
+                    l9.video_file3 = video_file3
                     db.session.commit()
                     return redirect('/edit/l9/'+sno)
 
@@ -649,7 +685,19 @@ def list_9(name):
     if request.method == 'POST':
         name = request.form.get('name')
         decr = request.form.get('decr')
-        l9 = L9(name=name, decr=decr)
+        pdf_decr1 = request.form.get('pdf_decr1') 
+        pdf_file1 = request.form.get('pdf_file1')
+        pdf_decr2 = request.form.get('pdf_decr2') 
+        pdf_file2 = request.form.get('pdf_file2')
+        pdf_decr3 = request.form.get('pdf_decr3') 
+        pdf_file3 = request.form.get('pdf_file3')
+        video_decr1 = request.form.get('video_decr1') 
+        video_file1 = request.form.get('video_file1')
+        video_decr2 = request.form.get('video_decr2')
+        video_file2 = request.form.get('video_file2')
+        video_decr3 = request.form.get('video_decr3') 
+        video_file3 = request.form.get('video_file3')
+        l9 = L9(name=name, decr=decr, pdf_decr1=pdf_decr1, pdf_decr2=pdf_decr2, pdf_decr3=pdf_decr3, video_decr1=video_decr1, video_decr2=video_decr2, video_decr3=video_decr3, pdf_file1=pdf_file1, pdf_file2=pdf_file2, pdf_file3=pdf_file3, video_file1=video_file1, video_file2=video_file2, video_file3=video_file3)
         db.session.add(l9)
         db.session.commit()
     l9 = L9.query.filter_by().all()
