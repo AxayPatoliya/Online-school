@@ -1,0 +1,70 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<section class="text-gray-700 body-font">
+    <div class="container px-5 py-24 mx-auto flex flex-wrap">
+      <div class="flex flex-wrap w-full">
+        <div class="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6">
+          {% for l9_sci in l9_sci %}
+          {% set fname = 'img/' + l9_sci.pdf_file1 %}
+          {% set ffname = 'img/' + l9_sci.pdf_file2 %}
+          {% set fffname = 'img/' + l9_sci.pdf_file3 %}
+            <div class="flex relative pb-12">
+            <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+              <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+            </div>
+            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+                <a>{{l9_sci.sno}}</a>
+              
+            </div>
+            <div class="flex-grow pl-4">
+              <h1 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">{{l9_sci.name}}</h1>
+              <h3 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">{{l9_sci.decr}}</h3>
+              
+              <hr style="color: lightblue;">
+
+              <p class="leading-relaxed">
+                  <a style="color:black;" target="_blank" type="button" href="{{ url_for('static', filename=fname) }}"> {{l9_sci.pdf_decr1}}</a> 
+              </p>
+
+              <p class="leading-relaxed">
+                <a style="color:red;" target="_blank" type="button" href="{{l9_sci.video_file1}}"> {{l9_sci.video_decr1}}</a> 
+            </p>
+
+              <p class="leading-relaxed">
+                <a style="color:black;" target="_blank" type="button" href="{{ url_for('static', filename=ffname) }}"> {{l9_sci.pdf_decr2}}</a> 
+            </p>
+
+            <p class="leading-relaxed">
+                <a style="color:red;" target="_blank" type="button" href="{{l9_sci.video_file2}}"> {{l9_sci.video_decr2}}</a> 
+            </p>
+
+            <p class="leading-relaxed">
+                <a style="color:black;" target="_blank" type="button" href="{{ url_for('static', filename=fffname) }}"> {{l9_sci.pdf_decr3}}</a> 
+            </p>
+
+            <p class="leading-relaxed">
+                <a style="color:red;" target="_blank" type="button" href="{{l9_sci.video_file3}}"> {{l9_sci.video_decr3}}</a> 
+            </p>
+
+
+
+            
+
+            
+
+            
+
+            </div>
+          </div>
+          {% endfor %}
+          
+          
+          
+        
+    </div>
+  </section>
+
+  {% endblock %}

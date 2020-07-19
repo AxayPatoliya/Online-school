@@ -416,7 +416,7 @@
       <a href="/logout"><button class="btn btn-danger">Logout</button></a>
       <hr>
 
-      <h1 style="text-align: center;">Standard-9: Edit chapters</h1>
+      <h1 style="text-align: center;">Standard-9: Edit chapters/Maths</h1>
       <hr>
     <table class="table">
         <thead>
@@ -439,6 +439,243 @@
             
             <td><a href="/edit/l9/{{l9.sno}}"><button type="button" class="btn btn-info">Edit</button></a></td>
             <td><a href="/delete/l9/{{l9.sno}}"><button type="button" class="btn btn-danger">Delete</button></a></td>
+          </tr>
+          
+          {% endfor %}
+       
+       
+        </tbody>
+      </table>
+
+
+
+      <hr>
+      <h1>Basic Actions For 9th standards subjects chapter Info</h1>
+      <a href="/edit/l9_hindi/0"><button class="btn btn-warning">Add a new chapter</button></a>
+      <a href="/logout"><button class="btn btn-danger">Logout</button></a>
+      <hr>
+
+      <h1 style="text-align: center;">Standard-9: Edit chapters/Hindi</h1>
+      <hr>
+    <table class="table">
+        <thead>
+          <tr>
+            <th>Sno</th>
+            <th>Chapter Name</th>
+            <th>Description of the chapter</th>
+            <th>Edit</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+            {% for l9_hindi in l9_hindi %}
+            <tr>
+            <td>{{l9_hindi.sno}}</td>
+            <td>{{l9_hindi.name}}</td>
+            
+            <td>{{l9_hindi.decr}}</td>
+            
+            <td><a href="/edit/l9_hindi/{{l9_hindi.sno}}"><button type="button" class="btn btn-info">Edit</button></a></td>
+            <td><a href="/delete/l9_hindi/{{l9_hindi.sno}}"><button type="button" class="btn btn-danger">Delete</button></a></td>
+          </tr>
+          
+          {% endfor %}
+       
+       
+        </tbody>
+      </table>
+
+     
+     
+      <hr>
+      <h1>Basic Actions For 9th standards subjects chapter Info</h1>
+      <a href="/edit/l9_ss/0"><button class="btn btn-warning">Add a new chapter</button></a>
+      <a href="/logout"><button class="btn btn-danger">Logout</button></a>
+      <hr>
+
+      <h1 style="text-align: center;">Standard-9: Edit chapters/Social-Science</h1>
+      <hr>
+    <table class="table">
+        <thead>
+          <tr>
+            <th>Sno</th>
+            <th>Chapter Name</th>
+            <th>Description of the chapter</th>
+            <th>Edit</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+            {% for l9_ss in l9_ss %}
+            <tr>
+            <td>{{l9_ss.sno}}</td>
+            <td>{{l9_ss.name}}</td>
+            
+            <td>{{l9_ss.decr}}</td>
+            
+            <td><a href="/edit/l9_ss/{{l9_ss.sno}}"><button type="button" class="btn btn-info">Edit</button></a></td>
+            <td><a href="/delete/l9_ss/{{l9_ss.sno}}"><button type="button" class="btn btn-danger">Delete</button></a></td>
+          </tr>
+          
+          {% endfor %}
+       
+       
+        </tbody>
+      </table>
+
+
+
+
+      <hr>
+      <h1>Basic Actions For 9th standards subjects chapter Info</h1>
+      <a href="/edit/l9_sk/0"><button class="btn btn-warning">Add a new chapter</button></a>
+      <a href="/logout"><button class="btn btn-danger">Logout</button></a>
+      <hr>
+
+      <h1 style="text-align: center;">Standard-9: Edit chapters/Sanskrit</h1>
+      <hr>
+    <table class="table">
+        <thead>
+          <tr>
+            <th>Sno</th>
+            <th>Chapter Name</th>
+            <th>Description of the chapter</th>
+            <th>Edit</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+            {% for l9_sk in l9_sk %}
+            <tr>
+            <td>{{l9_sk.sno}}</td>
+            <td>{{l9_sk.name}}</td>
+            
+            <td>{{l9_sk.decr}}</td>
+            
+            <td><a href="/edit/l9_sk/{{l9_sk.sno}}"><button type="button" class="btn btn-info">Edit</button></a></td>
+            <td><a href="/delete/l9_sk/{{l9_sk.sno}}"><button type="button" class="btn btn-danger">Delete</button></a></td>
+          </tr>
+          
+          {% endfor %}
+       
+       
+        </tbody>
+      </table>
+
+
+
+      <hr>
+      <h1>Basic Actions For 9th standards subjects chapter Info</h1>
+      <a href="/edit/l9_sci/0"><button class="btn btn-warning">Add a new chapter</button></a>
+      <a href="/logout"><button class="btn btn-danger">Logout</button></a>
+      <hr>
+
+      <h1 style="text-align: center;">Standard-9: Edit chapters/Science</h1>
+      <hr>
+    <table class="table">
+        <thead>
+          <tr>
+            <th>Sno</th>
+            <th>Chapter Name</th>
+            <th>Description of the chapter</th>
+            <th>Edit</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+            {% for l9_sci in l9_sci %}
+            <tr>
+            <td>{{l9_sci.sno}}</td>
+            <td>{{l9_sci.name}}</td>
+            
+            <td>{{l9_sci.decr}}</td>
+            
+            <td><a href="/edit/l9_sci/{{l9_sci.sno}}"><button type="button" class="btn btn-info">Edit</button></a></td>
+            <td><a href="/delete/l9_sci/{{l9_sci.sno}}"><button type="button" class="btn btn-danger">Delete</button></a></td>
+          </tr>
+          
+          {% endfor %}
+       
+       
+        </tbody>
+      </table>
+
+
+
+
+      <hr>
+      <h1>Basic Actions For 9th standards subjects chapter Info</h1>
+      <a href="/edit/l9_guj/0"><button class="btn btn-warning">Add a new chapter</button></a>
+      <a href="/logout"><button class="btn btn-danger">Logout</button></a>
+      <hr>
+
+      <h1 style="text-align: center;">Standard-9: Edit chapters/Gujarati</h1>
+      <hr>
+    <table class="table">
+        <thead>
+          <tr>
+            <th>Sno</th>
+            <th>Chapter Name</th>
+            <th>Description of the chapter</th>
+            <th>Edit</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+            {% for l9_guj in l9_guj %}
+            <tr>
+            <td>{{l9_guj.sno}}</td>
+            <td>{{l9_guj.name}}</td>
+            
+            <td>{{l9_guj.decr}}</td>
+            
+            <td><a href="/edit/l9_guj/{{l9_guj.sno}}"><button type="button" class="btn btn-info">Edit</button></a></td>
+            <td><a href="/delete/l9_guj/{{l9_guj.sno}}"><button type="button" class="btn btn-danger">Delete</button></a></td>
+          </tr>
+          
+          {% endfor %}
+       
+       
+        </tbody>
+      </table>
+
+
+
+
+      <hr>
+      <h1>Basic Actions For 9th standards subjects chapter Info</h1>
+      <a href="/edit/l9_eng/0"><button class="btn btn-warning">Add a new chapter</button></a>
+      <a href="/logout"><button class="btn btn-danger">Logout</button></a>
+      <hr>
+
+      <h1 style="text-align: center;">Standard-9: Edit chapters/English</h1>
+      <hr>
+    <table class="table">
+        <thead>
+          <tr>
+            <th>Sno</th>
+            <th>Chapter Name</th>
+            <th>Description of the chapter</th>
+            <th>Edit</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+            {% for l9_eng in l9_eng %}
+            <tr>
+            <td>{{l9_eng.sno}}</td>
+            <td>{{l9_eng.name}}</td>
+            
+            <td>{{l9_eng.decr}}</td>
+            
+            <td><a href="/edit/l9_eng/{{l9_eng.sno}}"><button type="button" class="btn btn-info">Edit</button></a></td>
+            <td><a href="/delete/l9_eng/{{l9_eng.sno}}"><button type="button" class="btn btn-danger">Delete</button></a></td>
           </tr>
           
           {% endfor %}

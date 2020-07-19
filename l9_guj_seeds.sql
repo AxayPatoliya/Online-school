@@ -1,0 +1,3 @@
+INSERT INTO l9_guj(
+	sno, name, decr, pdf_decr1, pdf_file1, pdf_decr2, pdf_file2, pdf_decr3, pdf_file3, video_decr1, video_file1, video_decr2, video_file2, video_decr3, video_file3)
+	VALUES (1, 'Gilo-Chakdo', 'Know something interesting about the story of Gilo-Chakdo ', 'Refer this PDF for better understanding', 'python tut book.pdf', '', '', '', '', 'Refer this video to watch the short-film on Gilo-Chakdo', 'https://dailyblogs2020.herokuapp.com/', '', '', '', '');

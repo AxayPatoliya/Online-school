@@ -1,0 +1,137 @@
+{% extends "layout.html" %}
+{% block body %}
+
+
+<!DOCTYPE html>
+<head>
+    <title>l9_hindi info Edit Panel</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+<body>
+
+
+  
+<form action="/edit/l9_hindi/{{sno}}" method="POST">
+    <section class="text-gray-700 body-font relative">
+        <div class="container px-5 py-24 mx-auto" style="padding-bottom: 44px;">
+          <div class="flex flex-col text-center w-full mb-12">
+            
+            
+            <h1>Basic Actions</h1>
+            
+            <a href="/dashboard"><button class="btn btn-warning">Dashboard Home</button></a>
+            
+            
+            <hr>
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Fill the credentials.</h1>
+            
+          </div>
+          <div class="lg:w-1/2 md:w-2/3 mx-auto">
+            <div class="flex flex-wrap -m-2">
+              
+                <div class="p-2 w-1/2">
+                <label style="text-align: center;">Name</label>
+                <input value="{{l9_hindi.name}}" id="name" name="name" class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base px-4 py-2" placeholder="Name" type="text">
+              </div>
+
+              <div class="p-2 w-1/2">
+                <label style="text-align: center;">Description about the chapters</label>
+                <input value="{{l9_hindi.decr}}" id="decr" name="decr" class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base px-4 py-2" placeholder="Description of the subject" type="text">
+              </div>
+
+              <div class="p-2 w-1/2">
+                <label style="text-align: center;">Description of the 1st PDF</label>
+                <input value="{{l9_hindi.pdf_decr1}}" id="pdf_decr1" name="pdf_decr1" class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base px-4 py-2" placeholder="Description for the 1st PDF" type="text">
+              </div>
+
+              <div class="p-2 w-1/2">
+                <label style="text-align: center;">File name of the 1st PDF</label>
+                <input value="{{l9_hindi.pdf_file1}}" id="pdf_file1" name="pdf_file1" class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base px-4 py-2" placeholder="File name of the 1st PDF" type="text">
+              </div>
+
+              <div class="p-2 w-1/2">
+                <label style="text-align: center;">Description of the 2nd PDF</label>
+                <input value="{{l9_hindi.pdf_decr2}}" id="pdf_decr2" name="pdf_decr2" class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base px-4 py-2" placeholder="Description for the 2nd PDF" type="text">
+              </div>
+
+              <div class="p-2 w-1/2">
+                <label style="text-align: center;">File name of the 2nd PDF</label>
+                <input value="{{l9_hindi.pdf_file2}}" id="pdf_file2" name="pdf_file2" class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base px-4 py-2" placeholder="File name of the 2nd PDF" type="text">
+              </div>
+
+              <div class="p-2 w-1/2">
+                <label style="text-align: center;">Description of the 3rd PDF</label>
+                <input value="{{l9_hindi.pdf_decr3}}" id="pdf_decr3" name="pdf_decr3" class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base px-4 py-2" placeholder="Description for the 3rd PDF" type="text">
+              </div>
+
+              <div class="p-2 w-1/2">
+                <label style="text-align: center;">File name of the 3rd PDF</label>
+                <input value="{{l9_hindi.pdf_file3}}" id="pdf_file3" name="pdf_file3" class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base px-4 py-2" placeholder="File name of the 3rd PDF" type="text">
+              </div>
+
+              <div class="p-2 w-1/2">
+                <label style="text-align: center;">Description of the 1st video</label>
+                <input value="{{l9_hindi.video_decr1}}" id="video_decr1" name="video_decr1" class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base px-4 py-2" placeholder="Description for the 1st video" type="text">
+              </div>
+
+              <div class="p-2 w-1/2">
+                <label style="text-align: center;">Link of the 1st video</label>
+                <input value="{{l9_hindi.video_file1}}" id="video_file1" name="video_file1" class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base px-4 py-2" placeholder="Link of the 1st video" type="text">
+              </div>
+
+              <div class="p-2 w-1/2">
+                <label style="text-align: center;">Description of the 2nd video</label>
+                <input value="{{l9_hindi.video_decr2}}" id="video_decr2" name="video_decr2" class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base px-4 py-2" placeholder="Description for the 2nd video" type="text">
+              </div>
+
+              <div class="p-2 w-1/2">
+                <label style="text-align: center;">Link of the 2nd video</label>
+                <input value="{{l9_hindi.video_file2}}" id="video_file2" name="video_file2" class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base px-4 py-2" placeholder="Link of the 2nd video" type="text">
+              </div>
+
+              <div class="p-2 w-1/2">
+                <label style="text-align: center;">Description of the 3rd video</label>
+                <input value="{{l9_hindi.video_decr3}}" id="video_decr3" name="video_decr3" class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base px-4 py-2" placeholder="Description for the 3rd video" type="text">
+              </div>
+
+              <div class="p-2 w-1/2">
+                <label style="text-align: center;">Link of the 3rd video</label>
+                <input value="{{l9_hindi.video_file3}}" id="video_file3" name="video_file3" class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base px-4 py-2" placeholder="Link of the 3rd video" type="text">
+              </div>
+
+
+
+
+
+            
+              <div class="p-2 w-full">
+                <button type="submit" class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Submit</button>
+              </div>
+              
+              
+            </div>
+           
+          </div>
+        
+        </div>
+      </section>
+      </form> 
+
+</body>
+</html>
+    
+</body>
+</html>
+
+
+
+
+
+{% endblock %}
+
+    
+
