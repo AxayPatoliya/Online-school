@@ -17,4 +17,4 @@ CREATE TABLE l9_ss
     video_file2 character varying(50) COLLATE pg_catalog."default" NOT NULL,
     video_decr3 text COLLATE pg_catalog."default" NOT NULL,
     video_file3 character varying(50) COLLATE pg_catalog."default" NOT NULL,
-    CONSTRAINT l9_ss_pkey PRIMARY KEY (sno)9
+    CONSTRAINT l9_ss_pkey PRIMARY KEY (sno)
