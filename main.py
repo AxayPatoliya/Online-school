@@ -1828,6 +1828,8 @@ def list_10(name):
         return render_template('list_10_guj.html', params=params, name=name, l10_guj=l10_guj)
     if name == 'English':
         return render_template('list_10_eng.html', params=params, name=name, l10_eng=l10_eng)
+    else:
+        return "Chapters for this subject is not created yet!"
 
 @app.route("/subject-10/list-10-ss/<string:name>", methods=["GET", "POST"])
 def list_10_ss(name):
@@ -1983,6 +1985,8 @@ def list_11(name):
         return render_template('list_11_phy.html', params=params, name=name, l11_phy=l11_phy)
     if name == 'English':
         return render_template('list_11_eng.html', params=params, name=name, l11_eng=l11_eng)
+    else:
+        return "Chapters for this subject is not created yet!"
 
 
 @app.route("/subject-11/list-11-chem/<string:name>", methods=["GET", "POST"])
@@ -2091,6 +2095,8 @@ def list_12(name):
         return  render_template('list_12_phy.html', params=params, name=name, l12_phy=l12_phy)
     if name == 'English':
         return  render_template('list_12_eng.html', params=params, name=name, l12_eng=l12_eng)
+    else:
+        return "Chapters for this subject is not created yet!"
 
 
 @app.route("/subject-12/list-12-chem/<string:name>", methods=["GET", "POST"])
