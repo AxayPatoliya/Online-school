@@ -122,6 +122,142 @@ class L9(db.Model):
     video_decr3 = db.Column(db.String(12), nullable=False)
     video_file3 = db.Column(db.String(12), nullable=False)
 
+class L11(db.Model):
+    sno = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    name = db.Column(db.String(80), nullable=False)
+    decr = db.Column(db.String(12), nullable=False)
+    pdf_decr1 = db.Column(db.String(12), nullable=False)
+    pdf_file1 = db.Column(db.String(12), nullable=False)
+    pdf_decr2 = db.Column(db.String(12), nullable=False)
+    pdf_file2 = db.Column(db.String(12), nullable=False)
+    pdf_decr3 = db.Column(db.String(12), nullable=False)
+    pdf_file3 = db.Column(db.String(12), nullable=False)
+    video_decr1 = db.Column(db.String(12), nullable=False)
+    video_file1 = db.Column(db.String(12), nullable=False)
+    video_decr2 = db.Column(db.String(12), nullable=False)
+    video_file2 = db.Column(db.String(12), nullable=False)
+    video_decr3 = db.Column(db.String(12), nullable=False)
+    video_file3 = db.Column(db.String(12), nullable=False)
+
+class L11_chem(db.Model):
+    sno = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    name = db.Column(db.String(80), nullable=False)
+    decr = db.Column(db.String(12), nullable=False)
+    pdf_decr1 = db.Column(db.String(12), nullable=False)
+    pdf_file1 = db.Column(db.String(12), nullable=False)
+    pdf_decr2 = db.Column(db.String(12), nullable=False)
+    pdf_file2 = db.Column(db.String(12), nullable=False)
+    pdf_decr3 = db.Column(db.String(12), nullable=False)
+    pdf_file3 = db.Column(db.String(12), nullable=False)
+    video_decr1 = db.Column(db.String(12), nullable=False)
+    video_file1 = db.Column(db.String(12), nullable=False)
+    video_decr2 = db.Column(db.String(12), nullable=False)
+    video_file2 = db.Column(db.String(12), nullable=False)
+    video_decr3 = db.Column(db.String(12), nullable=False)
+    video_file3 = db.Column(db.String(12), nullable=False)
+
+class L11_phy(db.Model):
+    sno = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    name = db.Column(db.String(80), nullable=False)
+    decr = db.Column(db.String(12), nullable=False)
+    pdf_decr1 = db.Column(db.String(12), nullable=False)
+    pdf_file1 = db.Column(db.String(12), nullable=False)
+    pdf_decr2 = db.Column(db.String(12), nullable=False)
+    pdf_file2 = db.Column(db.String(12), nullable=False)
+    pdf_decr3 = db.Column(db.String(12), nullable=False)
+    pdf_file3 = db.Column(db.String(12), nullable=False)
+    video_decr1 = db.Column(db.String(12), nullable=False)
+    video_file1 = db.Column(db.String(12), nullable=False)
+    video_decr2 = db.Column(db.String(12), nullable=False)
+    video_file2 = db.Column(db.String(12), nullable=False)
+    video_decr3 = db.Column(db.String(12), nullable=False)
+    video_file3 = db.Column(db.String(12), nullable=False)
+
+class L11_eng(db.Model):
+    sno = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    name = db.Column(db.String(80), nullable=False)
+    decr = db.Column(db.String(12), nullable=False)
+    pdf_decr1 = db.Column(db.String(12), nullable=False)
+    pdf_file1 = db.Column(db.String(12), nullable=False)
+    pdf_decr2 = db.Column(db.String(12), nullable=False)
+    pdf_file2 = db.Column(db.String(12), nullable=False)
+    pdf_decr3 = db.Column(db.String(12), nullable=False)
+    pdf_file3 = db.Column(db.String(12), nullable=False)
+    video_decr1 = db.Column(db.String(12), nullable=False)
+    video_file1 = db.Column(db.String(12), nullable=False)
+    video_decr2 = db.Column(db.String(12), nullable=False)
+    video_file2 = db.Column(db.String(12), nullable=False)
+    video_decr3 = db.Column(db.String(12), nullable=False)
+    video_file3 = db.Column(db.String(12), nullable=False)
+
+class L12(db.Model):
+    sno = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    name = db.Column(db.String(80), nullable=False)
+    decr = db.Column(db.String(12), nullable=False)
+    pdf_decr1 = db.Column(db.String(12), nullable=False)
+    pdf_file1 = db.Column(db.String(12), nullable=False)
+    pdf_decr2 = db.Column(db.String(12), nullable=False)
+    pdf_file2 = db.Column(db.String(12), nullable=False)
+    pdf_decr3 = db.Column(db.String(12), nullable=False)
+    pdf_file3 = db.Column(db.String(12), nullable=False)
+    video_decr1 = db.Column(db.String(12), nullable=False)
+    video_file1 = db.Column(db.String(12), nullable=False)
+    video_decr2 = db.Column(db.String(12), nullable=False)
+    video_file2 = db.Column(db.String(12), nullable=False)
+    video_decr3 = db.Column(db.String(12), nullable=False)
+    video_file3 = db.Column(db.String(12), nullable=False)
+
+class L12_chem(db.Model):
+    sno = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    name = db.Column(db.String(80), nullable=False)
+    decr = db.Column(db.String(12), nullable=False)
+    pdf_decr1 = db.Column(db.String(12), nullable=False)
+    pdf_file1 = db.Column(db.String(12), nullable=False)
+    pdf_decr2 = db.Column(db.String(12), nullable=False)
+    pdf_file2 = db.Column(db.String(12), nullable=False)
+    pdf_decr3 = db.Column(db.String(12), nullable=False)
+    pdf_file3 = db.Column(db.String(12), nullable=False)
+    video_decr1 = db.Column(db.String(12), nullable=False)
+    video_file1 = db.Column(db.String(12), nullable=False)
+    video_decr2 = db.Column(db.String(12), nullable=False)
+    video_file2 = db.Column(db.String(12), nullable=False)
+    video_decr3 = db.Column(db.String(12), nullable=False)
+    video_file3 = db.Column(db.String(12), nullable=False)
+
+class L12_phy(db.Model):
+    sno = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    name = db.Column(db.String(80), nullable=False)
+    decr = db.Column(db.String(12), nullable=False)
+    pdf_decr1 = db.Column(db.String(12), nullable=False)
+    pdf_file1 = db.Column(db.String(12), nullable=False)
+    pdf_decr2 = db.Column(db.String(12), nullable=False)
+    pdf_file2 = db.Column(db.String(12), nullable=False)
+    pdf_decr3 = db.Column(db.String(12), nullable=False)
+    pdf_file3 = db.Column(db.String(12), nullable=False)
+    video_decr1 = db.Column(db.String(12), nullable=False)
+    video_file1 = db.Column(db.String(12), nullable=False)
+    video_decr2 = db.Column(db.String(12), nullable=False)
+    video_file2 = db.Column(db.String(12), nullable=False)
+    video_decr3 = db.Column(db.String(12), nullable=False)
+    video_file3 = db.Column(db.String(12), nullable=False)
+
+class L12_eng(db.Model):
+    sno = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    name = db.Column(db.String(80), nullable=False)
+    decr = db.Column(db.String(12), nullable=False)
+    pdf_decr1 = db.Column(db.String(12), nullable=False)
+    pdf_file1 = db.Column(db.String(12), nullable=False)
+    pdf_decr2 = db.Column(db.String(12), nullable=False)
+    pdf_file2 = db.Column(db.String(12), nullable=False)
+    pdf_decr3 = db.Column(db.String(12), nullable=False)
+    pdf_file3 = db.Column(db.String(12), nullable=False)
+    video_decr1 = db.Column(db.String(12), nullable=False)
+    video_file1 = db.Column(db.String(12), nullable=False)
+    video_decr2 = db.Column(db.String(12), nullable=False)
+    video_file2 = db.Column(db.String(12), nullable=False)
+    video_decr3 = db.Column(db.String(12), nullable=False)
+    video_file3 = db.Column(db.String(12), nullable=False)
+
 @app.route("/uploader", methods = ['GET', 'POST'])
 def uploader():
     if ('user' in session and session['user'] == params['admin_user']):
@@ -248,6 +384,86 @@ def delete_l9(sno):
         db.session.commit()
     return redirect('/dashboard')
 
+# deleting point for l11
+
+@app.route("/delete/l11/<string:sno>", methods = ['GET', 'POST'])
+def delete_l11(sno):
+    if ('user' in session and session['user'] == params['admin_user']):
+        l11 = L11.query.filter_by(sno=sno).first()
+        db.session.delete(l11)
+        db.session.commit()
+    return redirect('/dashboard')
+
+# deleting point for l11_phy
+
+@app.route("/delete/l11_phy/<string:sno>", methods = ['GET', 'POST'])
+def delete_l11_phy(sno):
+    if ('user' in session and session['user'] == params['admin_user']):
+        l11_phy = L11_phy.query.filter_by(sno=sno).first()
+        db.session.delete(l11_phy)
+        db.session.commit()
+    return redirect('/dashboard')
+
+# deleting point for l11_chem
+
+@app.route("/delete/l11_chem/<string:sno>", methods = ['GET', 'POST'])
+def delete_l11_chem(sno):
+    if ('user' in session and session['user'] == params['admin_user']):
+        l11_chem = L11_chem.query.filter_by(sno=sno).first()
+        db.session.delete(l11_chem)
+        db.session.commit()
+    return redirect('/dashboard')
+
+# deleting point for l11_eng
+
+@app.route("/delete/l11_eng/<string:sno>", methods = ['GET', 'POST'])
+def delete_l11_eng(sno):
+    if ('user' in session and session['user'] == params['admin_user']):
+        l11_eng = L11_eng.query.filter_by(sno=sno).first()
+        db.session.delete(l11_eng)
+        db.session.commit()
+    return redirect('/dashboard')
+
+# deleting point for l12
+
+@app.route("/delete/l12/<string:sno>", methods = ['GET', 'POST'])
+def delete_l12(sno):
+    if ('user' in session and session['user'] == params['admin_user']):
+        l12 = L12.query.filter_by(sno=sno).first()
+        db.session.delete(l12)
+        db.session.commit()
+    return redirect('/dashboard')
+
+# deleting point for l12_phy
+
+@app.route("/delete/l12_phy/<string:sno>", methods = ['GET', 'POST'])
+def delete_l12_phy(sno):
+    if ('user' in session and session['user'] == params['admin_user']):
+        l12_phy = L12_phy.query.filter_by(sno=sno).first()
+        db.session.delete(l12_phy)
+        db.session.commit()
+    return redirect('/dashboard')
+
+# deleting point for l12_chem
+
+@app.route("/delete/l12_chem/<string:sno>", methods = ['GET', 'POST'])
+def delete_l12_chem(sno):
+    if ('user' in session and session['user'] == params['admin_user']):
+        l12_chem = L12_chem.query.filter_by(sno=sno).first()
+        db.session.delete(l12_chem)
+        db.session.commit()
+    return redirect('/dashboard')
+
+# deleting point for l12_eng
+
+@app.route("/delete/l12_eng/<string:sno>", methods = ['GET', 'POST'])
+def delete_l12_eng(sno):
+    if ('user' in session and session['user'] == params['admin_user']):
+        l12_chem_eng = L12_eng.query.filter_by(sno=sno).first()
+        db.session.delete(l12_eng)
+        db.session.commit()
+    return redirect('/dashboard')
+
 @app.route("/", methods=["GET","POST"])
 def home():
     if request.method == 'POST':
@@ -291,7 +507,15 @@ def dashboard():
         s11 = S11.query.all()
         s12 = S12.query.all()
         l9 = L9.query.all()
-        return render_template('dashboard.html', params=params, notice=notice, scroll=scroll, principal=principal, teacher=teacher, clerk=clerk, other=other, s9=s9, s10=s10, s11=s11, s12=s12, l9=l9)
+        l11 = L11.query.all()
+        l11_phy = L11_phy.query.all()
+        l11_chem = L11_chem.query.all()
+        l11_eng = L11_eng.query.all()
+        l12 = L12.query.all()
+        l12_phy = L12_phy.query.all()
+        l12_chem = L12_chem.query.all()
+        l12_eng = L12_eng.query.all()
+        return render_template('dashboard.html', params=params, notice=notice, scroll=scroll, principal=principal, teacher=teacher, clerk=clerk, other=other, s9=s9, s10=s10, s11=s11, s12=s12, l9=l9, l11=l11, l11_chem=l11_chem, l11_phy=l11_phy, l11_eng=l11_eng, l12=l12, l12_chem=l12_chem, l12_phy=l12_phy, l12_eng=l12_eng)
 
 
     if request.method == 'POST':
@@ -551,6 +775,7 @@ def edit_s11(sno):
             s11 = S11.query.filter_by(sno=sno).first()
             return render_template('edit_s11.html', params=params, s11=s11, sno=sno)
 
+
 # edit section for the s12
 
 @app.route("/edit/s12/<string:sno>", methods=["GET","POST"])
@@ -574,6 +799,7 @@ def edit_s12(sno):
 
             s12 = S12.query.filter_by(sno=sno).first()
             return render_template('edit_s12.html', params=params, s12=s12, sno=sno)
+
 
 # edit section for the l9
 
@@ -622,6 +848,399 @@ def edit_l9(sno):
 
             l9 = L9.query.filter_by(sno=sno).first()
             return render_template('edit_l9.html', params=params, l9=l9, sno=sno)
+
+# edit section for the l11
+
+@app.route("/edit/l11/<string:sno>", methods=["GET","POST"])
+def edit_l11(sno):
+        if ('user' in session and session['user'] == params['admin_user']):
+            if request.method == 'POST':
+                name = request.form.get('name')
+                decr = request.form.get('decr')
+                pdf_decr1 = request.form.get('pdf_decr1') 
+                pdf_file1 = request.form.get('pdf_file1')
+                pdf_decr2 = request.form.get('pdf_decr2') 
+                pdf_file2 = request.form.get('pdf_file2')
+                pdf_decr3 = request.form.get('pdf_decr3') 
+                pdf_file3 = request.form.get('pdf_file3')
+                video_decr1 = request.form.get('video_decr1') 
+                video_file1 = request.form.get('video_file1')
+                video_decr2 = request.form.get('video_decr2') 
+                video_file2 = request.form.get('video_file2')
+                video_decr3 = request.form.get('video_decr3') 
+                video_file3 = request.form.get('video_file3')
+
+                if sno == '0':
+                    l11 = L11(name=name, decr=decr, pdf_decr1=pdf_decr1, pdf_decr2=pdf_decr2, pdf_decr3=pdf_decr3, video_decr1=video_decr1, video_decr2=video_decr2, video_decr3=video_decr3, pdf_file1=pdf_file1, pdf_file2=pdf_file2, pdf_file3=pdf_file3, video_file1=video_file1, video_file2=video_file2, video_file3=video_file3)
+                    db.session.add(l11)
+                    db.session.commit()
+
+                else:
+                    l11 = L11.query.filter_by(sno=sno).first()
+                    l11.name = name
+                    l11.decr = decr
+                    l11.pdf_decr1 = pdf_decr1
+                    l11.pdf_file1 = pdf_file1
+                    l11.pdf_decr2 = pdf_decr2
+                    l11.pdf_file2 = pdf_file2
+                    l11.pdf_decr3 = pdf_decr3
+                    l11.pdf_file3 = pdf_file3
+                    l11.video_decr1 = video_decr1
+                    l11.video_file1 = video_file1
+                    l11.video_decr2 = video_decr2
+                    l11.video_file2 = video_file2
+                    l11.video_decr3 = video_decr3
+                    l11.video_file3 = video_file3
+                    db.session.commit()
+                    return redirect('/edit/l11/'+sno)
+
+            l11 = L11.query.filter_by(sno=sno).first()
+            return render_template('edit_l11.html', params=params, l11=l11, sno=sno)
+
+
+# edit section for the l11_chem
+
+@app.route("/edit/l11_chem/<string:sno>", methods=["GET","POST"])
+def edit_l11_chem(sno):
+        if ('user' in session and session['user'] == params['admin_user']):
+            if request.method == 'POST':
+                name = request.form.get('name')
+                decr = request.form.get('decr')
+                pdf_decr1 = request.form.get('pdf_decr1') 
+                pdf_file1 = request.form.get('pdf_file1')
+                pdf_decr2 = request.form.get('pdf_decr2') 
+                pdf_file2 = request.form.get('pdf_file2')
+                pdf_decr3 = request.form.get('pdf_decr3') 
+                pdf_file3 = request.form.get('pdf_file3')
+                video_decr1 = request.form.get('video_decr1') 
+                video_file1 = request.form.get('video_file1')
+                video_decr2 = request.form.get('video_decr2') 
+                video_file2 = request.form.get('video_file2')
+                video_decr3 = request.form.get('video_decr3') 
+                video_file3 = request.form.get('video_file3')
+
+                if sno == '0':
+                    l11_chem = L11_chem(name=name, decr=decr, pdf_decr1=pdf_decr1, pdf_decr2=pdf_decr2, pdf_decr3=pdf_decr3, video_decr1=video_decr1, video_decr2=video_decr2, video_decr3=video_decr3, pdf_file1=pdf_file1, pdf_file2=pdf_file2, pdf_file3=pdf_file3, video_file1=video_file1, video_file2=video_file2, video_file3=video_file3)
+                    db.session.add(l11_chem)
+                    db.session.commit()
+
+                else:
+                    l11_chem = L11_chem.query.filter_by(sno=sno).first()
+                    l11_chem.name = name
+                    l11_chem.decr = decr
+                    l11_chem.pdf_decr1 = pdf_decr1
+                    l11_chem.pdf_file1 = pdf_file1
+                    l11_chem.pdf_decr2 = pdf_decr2
+                    l11_chem.pdf_file2 = pdf_file2
+                    l11_chem.pdf_decr3 = pdf_decr3
+                    l11_chem.pdf_file3 = pdf_file3
+                    l11_chem.video_decr1 = video_decr1
+                    l11_chem.video_file1 = video_file1
+                    l11_chem.video_decr2 = video_decr2
+                    l11_chem.video_file2 = video_file2
+                    l11_chem.video_decr3 = video_decr3
+                    l11_chem.video_file3 = video_file3
+                    db.session.commit()
+                    return redirect('/edit/l11_chem/'+sno)
+
+            l11_chem = L11_chem.query.filter_by(sno=sno).first()
+            return render_template('edit_l11_chem.html', params=params, l11_chem=l11_chem, sno=sno)
+
+
+# edit section for the l11_phy
+
+@app.route("/edit/l11_phy/<string:sno>", methods=["GET","POST"])
+def edit_l11_phy(sno):
+        if ('user' in session and session['user'] == params['admin_user']):
+            if request.method == 'POST':
+                name = request.form.get('name')
+                decr = request.form.get('decr')
+                pdf_decr1 = request.form.get('pdf_decr1') 
+                pdf_file1 = request.form.get('pdf_file1')
+                pdf_decr2 = request.form.get('pdf_decr2') 
+                pdf_file2 = request.form.get('pdf_file2')
+                pdf_decr3 = request.form.get('pdf_decr3') 
+                pdf_file3 = request.form.get('pdf_file3')
+                video_decr1 = request.form.get('video_decr1') 
+                video_file1 = request.form.get('video_file1')
+                video_decr2 = request.form.get('video_decr2') 
+                video_file2 = request.form.get('video_file2')
+                video_decr3 = request.form.get('video_decr3') 
+                video_file3 = request.form.get('video_file3')
+
+                if sno == '0':
+                    l11_phy = L11_phy(name=name, decr=decr, pdf_decr1=pdf_decr1, pdf_decr2=pdf_decr2, pdf_decr3=pdf_decr3, video_decr1=video_decr1, video_decr2=video_decr2, video_decr3=video_decr3, pdf_file1=pdf_file1, pdf_file2=pdf_file2, pdf_file3=pdf_file3, video_file1=video_file1, video_file2=video_file2, video_file3=video_file3)
+                    db.session.add(l11_phy)
+                    db.session.commit()
+
+                else:
+                    l11_phy = L11_phy.query.filter_by(sno=sno).first()
+                    l11_phy.name = name
+                    l11_phy.decr = decr
+                    l11_phy.pdf_decr1 = pdf_decr1
+                    l11_phy.pdf_file1 = pdf_file1
+                    l11_phy.pdf_decr2 = pdf_decr2
+                    l11_phy.pdf_file2 = pdf_file2
+                    l11_phy.pdf_decr3 = pdf_decr3
+                    l11_phy.pdf_file3 = pdf_file3
+                    l11_phy.video_decr1 = video_decr1
+                    l11_phy.video_file1 = video_file1
+                    l11_phy.video_decr2 = video_decr2
+                    l11_phy.video_file2 = video_file2
+                    l11_phy.video_decr3 = video_decr3
+                    l11_phy.video_file3 = video_file3
+                    db.session.commit()
+                    return redirect('/edit/l11_phy/'+sno)
+
+            l11_phy = L11_phy.query.filter_by(sno=sno).first()
+            return render_template('edit_l11_phy.html', params=params, l11_phy=l11_phy, sno=sno)
+
+
+# edit section for the l11_eng
+
+@app.route("/edit/l11_eng/<string:sno>", methods=["GET","POST"])
+def edit_l11_eng(sno):
+        if ('user' in session and session['user'] == params['admin_user']):
+            if request.method == 'POST':
+                name = request.form.get('name')
+                decr = request.form.get('decr')
+                pdf_decr1 = request.form.get('pdf_decr1') 
+                pdf_file1 = request.form.get('pdf_file1')
+                pdf_decr2 = request.form.get('pdf_decr2') 
+                pdf_file2 = request.form.get('pdf_file2')
+                pdf_decr3 = request.form.get('pdf_decr3') 
+                pdf_file3 = request.form.get('pdf_file3')
+                video_decr1 = request.form.get('video_decr1') 
+                video_file1 = request.form.get('video_file1')
+                video_decr2 = request.form.get('video_decr2') 
+                video_file2 = request.form.get('video_file2')
+                video_decr3 = request.form.get('video_decr3') 
+                video_file3 = request.form.get('video_file3')
+
+                if sno == '0':
+                    l11_eng = L11_eng(name=name, decr=decr, pdf_decr1=pdf_decr1, pdf_decr2=pdf_decr2, pdf_decr3=pdf_decr3, video_decr1=video_decr1, video_decr2=video_decr2, video_decr3=video_decr3, pdf_file1=pdf_file1, pdf_file2=pdf_file2, pdf_file3=pdf_file3, video_file1=video_file1, video_file2=video_file2, video_file3=video_file3)
+                    db.session.add(l11_eng)
+                    db.session.commit()
+
+                else:
+                    l11_eng = L11_eng.query.filter_by(sno=sno).first()
+                    l11_eng.name = name
+                    l11_eng.decr = decr
+                    l11_eng.pdf_decr1 = pdf_decr1
+                    l11_eng.pdf_file1 = pdf_file1
+                    l11_eng.pdf_decr2 = pdf_decr2
+                    l11_eng.pdf_file2 = pdf_file2
+                    l11_eng.pdf_decr3 = pdf_decr3
+                    l11_eng.pdf_file3 = pdf_file3
+                    l11_eng.video_decr1 = video_decr1
+                    l11_eng.video_file1 = video_file1
+                    l11_eng.video_decr2 = video_decr2
+                    l11_eng.video_file2 = video_file2
+                    l11_eng.video_decr3 = video_decr3
+                    l11_eng.video_file3 = video_file3
+                    db.session.commit()
+                    return redirect('/edit/l11_eng/'+sno)
+
+            l11_eng = L11_eng.query.filter_by(sno=sno).first()
+            return render_template('edit_l11_eng.html', params=params, l11_eng=l11_eng, sno=sno)
+
+
+
+# edit section for the l12
+
+@app.route("/edit/l12/<string:sno>", methods=["GET","POST"])
+def edit_l12(sno):
+        if ('user' in session and session['user'] == params['admin_user']):
+            if request.method == 'POST':
+                name = request.form.get('name')
+                decr = request.form.get('decr')
+                pdf_decr1 = request.form.get('pdf_decr1') 
+                pdf_file1 = request.form.get('pdf_file1')
+                pdf_decr2 = request.form.get('pdf_decr2') 
+                pdf_file2 = request.form.get('pdf_file2')
+                pdf_decr3 = request.form.get('pdf_decr3') 
+                pdf_file3 = request.form.get('pdf_file3')
+                video_decr1 = request.form.get('video_decr1') 
+                video_file1 = request.form.get('video_file1')
+                video_decr2 = request.form.get('video_decr2') 
+                video_file2 = request.form.get('video_file2')
+                video_decr3 = request.form.get('video_decr3') 
+                video_file3 = request.form.get('video_file3')
+
+                if sno == '0':
+                    l12 = L12(name=name, decr=decr, pdf_decr1=pdf_decr1, pdf_decr2=pdf_decr2, pdf_decr3=pdf_decr3, video_decr1=video_decr1, video_decr2=video_decr2, video_decr3=video_decr3, pdf_file1=pdf_file1, pdf_file2=pdf_file2, pdf_file3=pdf_file3, video_file1=video_file1, video_file2=video_file2, video_file3=video_file3)
+                    db.session.add(l12)
+                    db.session.commit()
+
+                else:
+                    l12 = L12.query.filter_by(sno=sno).first()
+                    l12.name = name
+                    l12.decr = decr
+                    l12.pdf_decr1 = pdf_decr1
+                    l12.pdf_file1 = pdf_file1
+                    l12.pdf_decr2 = pdf_decr2
+                    l12.pdf_file2 = pdf_file2
+                    l12.pdf_decr3 = pdf_decr3
+                    l12.pdf_file3 = pdf_file3
+                    l12.video_decr1 = video_decr1
+                    l12.video_file1 = video_file1
+                    l12.video_decr2 = video_decr2
+                    l12.video_file2 = video_file2
+                    l12.video_decr3 = video_decr3
+                    l12.video_file3 = video_file3
+                    db.session.commit()
+                    return redirect('/edit/l12/'+sno)
+
+            l12 = L12.query.filter_by(sno=sno).first()
+            return render_template('edit_l12.html', params=params, l12=l12, sno=sno)
+
+
+# edit section for the l12_chem
+
+@app.route("/edit/l12_chem/<string:sno>", methods=["GET","POST"])
+def edit_l12_chem(sno):
+        if ('user' in session and session['user'] == params['admin_user']):
+            if request.method == 'POST':
+                name = request.form.get('name')
+                decr = request.form.get('decr')
+                pdf_decr1 = request.form.get('pdf_decr1') 
+                pdf_file1 = request.form.get('pdf_file1')
+                pdf_decr2 = request.form.get('pdf_decr2') 
+                pdf_file2 = request.form.get('pdf_file2')
+                pdf_decr3 = request.form.get('pdf_decr3') 
+                pdf_file3 = request.form.get('pdf_file3')
+                video_decr1 = request.form.get('video_decr1') 
+                video_file1 = request.form.get('video_file1')
+                video_decr2 = request.form.get('video_decr2') 
+                video_file2 = request.form.get('video_file2')
+                video_decr3 = request.form.get('video_decr3') 
+                video_file3 = request.form.get('video_file3')
+
+                if sno == '0':
+                    l12_chem = L12_chem(name=name, decr=decr, pdf_decr1=pdf_decr1, pdf_decr2=pdf_decr2, pdf_decr3=pdf_decr3, video_decr1=video_decr1, video_decr2=video_decr2, video_decr3=video_decr3, pdf_file1=pdf_file1, pdf_file2=pdf_file2, pdf_file3=pdf_file3, video_file1=video_file1, video_file2=video_file2, video_file3=video_file3)
+                    db.session.add(l12_chem)
+                    db.session.commit()
+
+                else:
+                    l12_chem = L12_chem.query.filter_by(sno=sno).first()
+                    l12_chem.name = name
+                    l12_chem.decr = decr
+                    l12_chem.pdf_decr1 = pdf_decr1
+                    l12_chem.pdf_file1 = pdf_file1
+                    l12_chem.pdf_decr2 = pdf_decr2
+                    l12_chem.pdf_file2 = pdf_file2
+                    l12_chem.pdf_decr3 = pdf_decr3
+                    l12_chem.pdf_file3 = pdf_file3
+                    l12_chem.video_decr1 = video_decr1
+                    l12_chem.video_file1 = video_file1
+                    l12_chem.video_decr2 = video_decr2
+                    l12_chem.video_file2 = video_file2
+                    l12_chem.video_decr3 = video_decr3
+                    l12_chem.video_file3 = video_file3
+                    db.session.commit()
+                    return redirect('/edit/l12_chem/'+sno)
+
+            l12_chem = L12_chem.query.filter_by(sno=sno).first()
+            return render_template('edit_l12_chem.html', params=params, l12_chem=l12_chem, sno=sno)
+
+
+# edit section for the l12_phy
+
+@app.route("/edit/l12_phy/<string:sno>", methods=["GET","POST"])
+def edit_l12_phy(sno):
+        if ('user' in session and session['user'] == params['admin_user']):
+            if request.method == 'POST':
+                name = request.form.get('name')
+                decr = request.form.get('decr')
+                pdf_decr1 = request.form.get('pdf_decr1') 
+                pdf_file1 = request.form.get('pdf_file1')
+                pdf_decr2 = request.form.get('pdf_decr2') 
+                pdf_file2 = request.form.get('pdf_file2')
+                pdf_decr3 = request.form.get('pdf_decr3') 
+                pdf_file3 = request.form.get('pdf_file3')
+                video_decr1 = request.form.get('video_decr1') 
+                video_file1 = request.form.get('video_file1')
+                video_decr2 = request.form.get('video_decr2') 
+                video_file2 = request.form.get('video_file2')
+                video_decr3 = request.form.get('video_decr3') 
+                video_file3 = request.form.get('video_file3')
+
+                if sno == '0':
+                    l12_phy = L12_phy(name=name, decr=decr, pdf_decr1=pdf_decr1, pdf_decr2=pdf_decr2, pdf_decr3=pdf_decr3, video_decr1=video_decr1, video_decr2=video_decr2, video_decr3=video_decr3, pdf_file1=pdf_file1, pdf_file2=pdf_file2, pdf_file3=pdf_file3, video_file1=video_file1, video_file2=video_file2, video_file3=video_file3)
+                    db.session.add(l12_phy)
+                    db.session.commit()
+
+                else:
+                    l12_phy = L12_phy.query.filter_by(sno=sno).first()
+                    l12_phy.name = name
+                    l12_phy.decr = decr
+                    l12_phy.pdf_decr1 = pdf_decr1
+                    l12_phy.pdf_file1 = pdf_file1
+                    l12_phy.pdf_decr2 = pdf_decr2
+                    l12_phy.pdf_file2 = pdf_file2
+                    l12_phy.pdf_decr3 = pdf_decr3
+                    l12_phy.pdf_file3 = pdf_file3
+                    l12_phy.video_decr1 = video_decr1
+                    l12_phy.video_file1 = video_file1
+                    l12_phy.video_decr2 = video_decr2
+                    l12_phy.video_file2 = video_file2
+                    l12_phy.video_decr3 = video_decr3
+                    l12_phy.video_file3 = video_file3
+                    db.session.commit()
+                    return redirect('/edit/l12_phy/'+sno)
+
+            l12_phy = L12_phy.query.filter_by(sno=sno).first()
+            return render_template('edit_l12_phy.html', params=params, l12_phy=l12_phy, sno=sno)
+
+
+# edit section for the l12_eng
+
+@app.route("/edit/l12_eng/<string:sno>", methods=["GET","POST"])
+def edit_l12_eng(sno):
+        if ('user' in session and session['user'] == params['admin_user']):
+            if request.method == 'POST':
+                name = request.form.get('name')
+                decr = request.form.get('decr')
+                pdf_decr1 = request.form.get('pdf_decr1') 
+                pdf_file1 = request.form.get('pdf_file1')
+                pdf_decr2 = request.form.get('pdf_decr2') 
+                pdf_file2 = request.form.get('pdf_file2')
+                pdf_decr3 = request.form.get('pdf_decr3') 
+                pdf_file3 = request.form.get('pdf_file3')
+                video_decr1 = request.form.get('video_decr1') 
+                video_file1 = request.form.get('video_file1')
+                video_decr2 = request.form.get('video_decr2') 
+                video_file2 = request.form.get('video_file2')
+                video_decr3 = request.form.get('video_decr3') 
+                video_file3 = request.form.get('video_file3')
+
+                if sno == '0':
+                    l12_eng = L12_eng(name=name, decr=decr, pdf_decr1=pdf_decr1, pdf_decr2=pdf_decr2, pdf_decr3=pdf_decr3, video_decr1=video_decr1, video_decr2=video_decr2, video_decr3=video_decr3, pdf_file1=pdf_file1, pdf_file2=pdf_file2, pdf_file3=pdf_file3, video_file1=video_file1, video_file2=video_file2, video_file3=video_file3)
+                    db.session.add(l12_eng)
+                    db.session.commit()
+
+                else:
+                    l12_eng = L12_eng.query.filter_by(sno=sno).first()
+                    l12_eng.name = name
+                    l12_eng.decr = decr
+                    l12_eng.pdf_decr1 = pdf_decr1
+                    l12_eng.pdf_file1 = pdf_file1
+                    l12_eng.pdf_decr2 = pdf_decr2
+                    l12_eng.pdf_file2 = pdf_file2
+                    l12_eng.pdf_decr3 = pdf_decr3
+                    l12_eng.pdf_file3 = pdf_file3
+                    l12_eng.video_decr1 = video_decr1
+                    l12_eng.video_file1 = video_file1
+                    l12_eng.video_decr2 = video_decr2
+                    l12_eng.video_file2 = video_file2
+                    l12_eng.video_decr3 = video_decr3
+                    l12_eng.video_file3 = video_file3
+                    db.session.commit()
+                    return redirect('/edit/l12_eng/'+sno)
+
+            l12_eng = L12_eng.query.filter_by(sno=sno).first()
+            return render_template('edit_l12_eng.html', params=params, l12_eng=l12_eng, sno=sno)
+
 
 
 @app.route("/staff-info")
@@ -701,14 +1320,8 @@ def list_9(name):
         db.session.add(l9)
         db.session.commit()
     l9 = L9.query.filter_by().all()
-    if name == 'Maths':
-        return  render_template('list_9.html', params=params, name=name, l9=l9)   
-    elif name=='Chemistry':
-        return "This is a Chemistry subject"
-    elif name =='Physics':
-        return "This is a Physics subject"
-    elif name=='English':
-        return "This is a English subject"
+    return  render_template('list_9.html', params=params, name=name, l9=l9)   
+    
 
 
 
@@ -723,13 +1336,218 @@ def list_10(name):
     
     
 
-@app.route("/subject-11/list-11/<string:name>")
+@app.route("/subject-11/list-11/<name>", methods=["GET", "POST"])
 def list_11(name):
-    return  render_template('list_11.html', params=params, name=name)
+    if request.method == 'POST':
+        name = request.form.get('name')
+        decr = request.form.get('decr')
+        pdf_decr1 = request.form.get('pdf_decr1') 
+        pdf_file1 = request.form.get('pdf_file1')
+        pdf_decr2 = request.form.get('pdf_decr2') 
+        pdf_file2 = request.form.get('pdf_file2')
+        pdf_decr3 = request.form.get('pdf_decr3') 
+        pdf_file3 = request.form.get('pdf_file3')
+        video_decr1 = request.form.get('video_decr1') 
+        video_file1 = request.form.get('video_file1')
+        video_decr2 = request.form.get('video_decr2')
+        video_file2 = request.form.get('video_file2')
+        video_decr3 = request.form.get('video_decr3') 
+        video_file3 = request.form.get('video_file3')
+        l11 = L11(name=name, decr=decr, pdf_decr1=pdf_decr1, pdf_decr2=pdf_decr2, pdf_decr3=pdf_decr3, video_decr1=video_decr1, video_decr2=video_decr2, video_decr3=video_decr3, pdf_file1=pdf_file1, pdf_file2=pdf_file2, pdf_file3=pdf_file3, video_file1=video_file1, video_file2=video_file2, video_file3=video_file3)
+        db.session.add(l11)
+        db.session.commit()
+    l11 = L11.query.filter_by().all()
+    l11_chem = L11_chem.query.filter_by().all()
+    l11_phy = L11_phy.query.filter_by().all()
+    l11_eng = L11_eng.query.filter_by().all()
+    if name == 'Maths':
+        return  render_template('list_11.html', params=params, name=name, l11=l11)
+    if name == 'Chemistry':
+        return render_template('list_11_chem.html', params=params, name=name, l11_chem=l11_chem)
+    if name == 'Physics':
+        return render_template('list_11_phy.html', params=params, name=name, l11_phy=l11_phy)
+    if name == 'English':
+        return render_template('list_11_eng.html', params=params, name=name, l11_eng=l11_eng)
 
-@app.route("/subject-12/list-12/<string:name>")
+
+@app.route("/subject-11/list-11-chem/<string:name>", methods=["GET", "POST"])
+def list_11_chem(name):
+    if request.method == 'POST':
+        name = request.form.get('name')
+        decr = request.form.get('decr')
+        pdf_decr1 = request.form.get('pdf_decr1') 
+        pdf_file1 = request.form.get('pdf_file1')
+        pdf_decr2 = request.form.get('pdf_decr2') 
+        pdf_file2 = request.form.get('pdf_file2')
+        pdf_decr3 = request.form.get('pdf_decr3') 
+        pdf_file3 = request.form.get('pdf_file3')
+        video_decr1 = request.form.get('video_decr1') 
+        video_file1 = request.form.get('video_file1')
+        video_decr2 = request.form.get('video_decr2')
+        video_file2 = request.form.get('video_file2')
+        video_decr3 = request.form.get('video_decr3') 
+        video_file3 = request.form.get('video_file3')
+        l11_chem = L11_chem(name=name, decr=decr, pdf_decr1=pdf_decr1, pdf_decr2=pdf_decr2, pdf_decr3=pdf_decr3, video_decr1=video_decr1, video_decr2=video_decr2, video_decr3=video_decr3, pdf_file1=pdf_file1, pdf_file2=pdf_file2, pdf_file3=pdf_file3, video_file1=video_file1, video_file2=video_file2, video_file3=video_file3)
+        db.session.add(l11_chem)
+        db.session.commit()
+    l11_chem = L11_chem.query.filter_by().all()
+    return  render_template('list_11_chem.html', params=params, name=name, l11_chem=l11_chem)
+
+
+
+@app.route("/subject-11/list-11-phy/<string:name>", methods=["GET", "POST"])
+def list_11_phy(name):
+    if request.method == 'POST':
+        name = request.form.get('name')
+        decr = request.form.get('decr')
+        pdf_decr1 = request.form.get('pdf_decr1') 
+        pdf_file1 = request.form.get('pdf_file1')
+        pdf_decr2 = request.form.get('pdf_decr2') 
+        pdf_file2 = request.form.get('pdf_file2')
+        pdf_decr3 = request.form.get('pdf_decr3') 
+        pdf_file3 = request.form.get('pdf_file3')
+        video_decr1 = request.form.get('video_decr1') 
+        video_file1 = request.form.get('video_file1')
+        video_decr2 = request.form.get('video_decr2')
+        video_file2 = request.form.get('video_file2')
+        video_decr3 = request.form.get('video_decr3') 
+        video_file3 = request.form.get('video_file3')
+        l11_phy = L11_phy(name=name, decr=decr, pdf_decr1=pdf_decr1, pdf_decr2=pdf_decr2, pdf_decr3=pdf_decr3, video_decr1=video_decr1, video_decr2=video_decr2, video_decr3=video_decr3, pdf_file1=pdf_file1, pdf_file2=pdf_file2, pdf_file3=pdf_file3, video_file1=video_file1, video_file2=video_file2, video_file3=video_file3)
+        db.session.add(l11_phy)
+        db.session.commit()
+    l11_phy = L11_phy.query.filter_by().all()
+    return  render_template('list_11_phy.html', params=params, name=name, l11_phy=l11_phy)
+
+
+@app.route("/subject-11/list-11-eng/<string:name>", methods=["GET", "POST"])
+def list_11_eng(name):
+    if request.method == 'POST':
+        name = request.form.get('name')
+        decr = request.form.get('decr')
+        pdf_decr1 = request.form.get('pdf_decr1') 
+        pdf_file1 = request.form.get('pdf_file1')
+        pdf_decr2 = request.form.get('pdf_decr2') 
+        pdf_file2 = request.form.get('pdf_file2')
+        pdf_decr3 = request.form.get('pdf_decr3') 
+        pdf_file3 = request.form.get('pdf_file3')
+        video_decr1 = request.form.get('video_decr1') 
+        video_file1 = request.form.get('video_file1')
+        video_decr2 = request.form.get('video_decr2')
+        video_file2 = request.form.get('video_file2')
+        video_decr3 = request.form.get('video_decr3') 
+        video_file3 = request.form.get('video_file3')
+        l11_eng = L11_eng(name=name, decr=decr, pdf_decr1=pdf_decr1, pdf_decr2=pdf_decr2, pdf_decr3=pdf_decr3, video_decr1=video_decr1, video_decr2=video_decr2, video_decr3=video_decr3, pdf_file1=pdf_file1, pdf_file2=pdf_file2, pdf_file3=pdf_file3, video_file1=video_file1, video_file2=video_file2, video_file3=video_file3)
+        db.session.add(l11_eng)
+        db.session.commit()
+    l11_eng = L11_eng.query.filter_by().all()
+    return  render_template('list_11_eng.html', params=params, name=name, l11_eng=l11_eng)
+
+    
+
+@app.route("/subject-12/list-12/<name>", methods=["GET", "POST"])
 def list_12(name):
-    return  render_template('list_12.html', params=params, name=name)
+    if request.method == 'POST':
+        name = request.form.get('name')
+        decr = request.form.get('decr')
+        pdf_decr1 = request.form.get('pdf_decr1') 
+        pdf_file1 = request.form.get('pdf_file1')
+        pdf_decr2 = request.form.get('pdf_decr2') 
+        pdf_file2 = request.form.get('pdf_file2')
+        pdf_decr3 = request.form.get('pdf_decr3') 
+        pdf_file3 = request.form.get('pdf_file3')
+        video_decr1 = request.form.get('video_decr1') 
+        video_file1 = request.form.get('video_file1')
+        video_decr2 = request.form.get('video_decr2')
+        video_file2 = request.form.get('video_file2')
+        video_decr3 = request.form.get('video_decr3') 
+        video_file3 = request.form.get('video_file3')
+        l12 = L12(name=name, decr=decr, pdf_decr1=pdf_decr1, pdf_decr2=pdf_decr2, pdf_decr3=pdf_decr3, video_decr1=video_decr1, video_decr2=video_decr2, video_decr3=video_decr3, pdf_file1=pdf_file1, pdf_file2=pdf_file2, pdf_file3=pdf_file3, video_file1=video_file1, video_file2=video_file2, video_file3=video_file3)
+        db.session.add(l12)
+        db.session.commit()
+    l12 = L12.query.filter_by().all()
+    l12_chem = L12_chem.query.filter_by().all()
+    l12_phy = L12_phy.query.filter_by().all()
+    l12_eng = L12_eng.query.filter_by().all()
+    if name == 'Maths':
+        return  render_template('list_12.html', params=params, name=name, l12=l12)
+    if name == 'Chemistry':
+        return  render_template('list_12_chem.html', params=params, name=name, l12_chem=l12_chem)
+    if name == 'Physics':
+        return  render_template('list_12_phy.html', params=params, name=name, l12_phy=l12_phy)
+    if name == 'English':
+        return  render_template('list_12_eng.html', params=params, name=name, l12_eng=l12_eng)
+
+
+@app.route("/subject-12/list-12-chem/<string:name>", methods=["GET", "POST"])
+def list_12_chem(name):
+    if request.method == 'POST':
+        name = request.form.get('name')
+        decr = request.form.get('decr')
+        pdf_decr1 = request.form.get('pdf_decr1') 
+        pdf_file1 = request.form.get('pdf_file1')
+        pdf_decr2 = request.form.get('pdf_decr2') 
+        pdf_file2 = request.form.get('pdf_file2')
+        pdf_decr3 = request.form.get('pdf_decr3') 
+        pdf_file3 = request.form.get('pdf_file3')
+        video_decr1 = request.form.get('video_decr1') 
+        video_file1 = request.form.get('video_file1')
+        video_decr2 = request.form.get('video_decr2')
+        video_file2 = request.form.get('video_file2')
+        video_decr3 = request.form.get('video_decr3') 
+        video_file3 = request.form.get('video_file3')
+        l12_chem = L12_chem(name=name, decr=decr, pdf_decr1=pdf_decr1, pdf_decr2=pdf_decr2, pdf_decr3=pdf_decr3, video_decr1=video_decr1, video_decr2=video_decr2, video_decr3=video_decr3, pdf_file1=pdf_file1, pdf_file2=pdf_file2, pdf_file3=pdf_file3, video_file1=video_file1, video_file2=video_file2, video_file3=video_file3)
+        db.session.add(l12_chem)
+        db.session.commit()
+    l12_chem = L12_chem.query.filter_by().all()
+    return  render_template('list_12_chem.html', params=params, name=name, l12_chem=l12_chem)
+
+
+@app.route("/subject-12/list-12-phy/<string:name>", methods=["GET", "POST"])
+def list_12_phy(name):
+    if request.method == 'POST':
+        name = request.form.get('name')
+        decr = request.form.get('decr')
+        pdf_decr1 = request.form.get('pdf_decr1') 
+        pdf_file1 = request.form.get('pdf_file1')
+        pdf_decr2 = request.form.get('pdf_decr2') 
+        pdf_file2 = request.form.get('pdf_file2')
+        pdf_decr3 = request.form.get('pdf_decr3') 
+        pdf_file3 = request.form.get('pdf_file3')
+        video_decr1 = request.form.get('video_decr1') 
+        video_file1 = request.form.get('video_file1')
+        video_decr2 = request.form.get('video_decr2')
+        video_file2 = request.form.get('video_file2')
+        video_decr3 = request.form.get('video_decr3') 
+        video_file3 = request.form.get('video_file3')
+        l12_phy = L12_phy(name=name, decr=decr, pdf_decr1=pdf_decr1, pdf_decr2=pdf_decr2, pdf_decr3=pdf_decr3, video_decr1=video_decr1, video_decr2=video_decr2, video_decr3=video_decr3, pdf_file1=pdf_file1, pdf_file2=pdf_file2, pdf_file3=pdf_file3, video_file1=video_file1, video_file2=video_file2, video_file3=video_file3)
+        db.session.add(l12_phy)
+        db.session.commit()
+    l12_phy = L12_phy.query.filter_by().all()
+    return  render_template('list_12_phy.html', params=params, name=name, l12_phy=l12_phy)
+
+@app.route("/subject-12/list-12-eng/<string:name>", methods=["GET", "POST"])
+def list_12_eng(name):
+    if request.method == 'POST':
+        name = request.form.get('name')
+        decr = request.form.get('decr')
+        pdf_decr1 = request.form.get('pdf_decr1') 
+        pdf_file1 = request.form.get('pdf_file1')
+        pdf_decr2 = request.form.get('pdf_decr2') 
+        pdf_file2 = request.form.get('pdf_file2')
+        pdf_decr3 = request.form.get('pdf_decr3') 
+        pdf_file3 = request.form.get('pdf_file3')
+        video_decr1 = request.form.get('video_decr1') 
+        video_file1 = request.form.get('video_file1')
+        video_decr2 = request.form.get('video_decr2')
+        video_file2 = request.form.get('video_file2')
+        video_decr3 = request.form.get('video_decr3') 
+        video_file3 = request.form.get('video_file3')
+        l12_eng = L12_eng(name=name, decr=decr, pdf_decr1=pdf_decr1, pdf_decr2=pdf_decr2, pdf_decr3=pdf_decr3, video_decr1=video_decr1, video_decr2=video_decr2, video_decr3=video_decr3, pdf_file1=pdf_file1, pdf_file2=pdf_file2, pdf_file3=pdf_file3, video_file1=video_file1, video_file2=video_file2, video_file3=video_file3)
+        db.session.add(l12_eng)
+        db.session.commit()
+    l12_eng = L12_eng.query.filter_by().all()
+    return  render_template('list_12_eng.html', params=params, name=name, l12_eng=l12_eng)
+
 
 
 @app.route("/subject-9", methods=["GET", "POST"])

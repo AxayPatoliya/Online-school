@@ -1,0 +1,3 @@
+INSERT INTO l12_chem(
+	sno, name, decr, pdf_decr1, pdf_file1, pdf_decr2, pdf_file2, pdf_decr3, pdf_file3, video_decr1, video_file1, video_decr2, video_file2, video_decr3, video_file3)
+	VALUES (1, 'Chemical reaction', 'Learn about the chemical reaction', 'Refer this PDF for better understanding', 'python tut book.pdf', '', '', '', '', 'Refer this video to get more information about the chemical reaction', 'https://dailyblogs2020.herokuapp.com/', '', '', '', '');

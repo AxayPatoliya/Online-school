@@ -1,0 +1,3 @@
+INSERT INTO l11_phy(
+	sno, name, decr, pdf_decr1, pdf_file1, pdf_decr2, pdf_file2, pdf_decr3, pdf_file3, video_decr1, video_file1, video_decr2, video_file2, video_decr3, video_file3)
+	VALUES (1, 'Motion', 'Learn about the motion', 'Refer this PDF for better understanding', 'python tut book.pdf', '', '', '', '', 'Refer this video to get more information about the motion', 'https://dailyblogs2020.herokuapp.com/', '', '', '', '');
