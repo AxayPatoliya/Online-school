@@ -7,46 +7,46 @@
     <div class="container px-5 py-24 mx-auto flex flex-wrap">
       <div class="flex flex-wrap w-full">
         <div class="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6">
-          {% for l10 in l10 %}
-          {% set fname = 'img/' + l10.pdf_file1 %}
-          {% set ffname = 'img/' + l10.pdf_file2 %}
-          {% set fffname = 'img/' + l10.pdf_file3 %}
+          {% for l10_ss in l10_ss %}
+          {% set fname = 'img/' + l10_ss.pdf_file1 %}
+          {% set ffname = 'img/' + l10_ss.pdf_file2 %}
+          {% set fffname = 'img/' + l10_ss.pdf_file3 %}
             <div class="flex relative pb-12">
             <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
               <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
             </div>
             <div class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
-                <a>{{l10.sno}}</a>
+                <a>{{l10_ss.sno}}</a>
               
             </div>
             <div class="flex-grow pl-4">
-              <h1 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">{{l10.name}}</h1>
-              <h3 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">{{l10.decr}}</h3>
+              <h1 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">{{l10_ss.name}}</h1>
+              <h3 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">{{l10_ss.decr}}</h3>
               
               <hr style="color: lightblue;">
 
               <p class="leading-relaxed">
-                  <a style="color:black;" target="_blank" type="button" href="{{ url_for('static', filename=fname) }}"> {{l10.pdf_decr1}}</a> 
+                  <a style="color:black;" target="_blank" type="button" href="{{ url_for('static', filename=fname) }}"> {{l10_ss.pdf_decr1}}</a> 
               </p>
 
               <p class="leading-relaxed">
-                <a style="color:red;" target="_blank" type="button" href="{{l10.video_file1}}"> {{l10.video_decr1}}</a> 
+                <a style="color:red;" target="_blank" type="button" href="{{l10_ss.video_file1}}"> {{l10_ss.video_decr1}}</a> 
             </p>
 
               <p class="leading-relaxed">
-                <a style="color:black;" target="_blank" type="button" href="{{ url_for('static', filename=ffname) }}"> {{l10.pdf_decr2}}</a> 
+                <a style="color:black;" target="_blank" type="button" href="{{ url_for('static', filename=ffname) }}"> {{l10_ss.pdf_decr2}}</a> 
             </p>
 
             <p class="leading-relaxed">
-                <a style="color:red;" target="_blank" type="button" href="{{l10.video_file2}}"> {{l10.video_decr2}}</a> 
+                <a style="color:red;" target="_blank" type="button" href="{{l10_ss.video_file2}}"> {{l10_ss.video_decr2}}</a> 
             </p>
 
             <p class="leading-relaxed">
-                <a style="color:black;" target="_blank" type="button" href="{{ url_for('static', filename=fffname) }}"> {{l10.pdf_decr3}}</a> 
+                <a style="color:black;" target="_blank" type="button" href="{{ url_for('static', filename=fffname) }}"> {{l10_ss.pdf_decr3}}</a> 
             </p>
 
             <p class="leading-relaxed">
-                <a style="color:red;" target="_blank" type="button" href="{{l10.video_file3}}"> {{l10.video_decr3}}</a> 
+                <a style="color:red;" target="_blank" type="button" href="{{l10_ss.video_file3}}"> {{l10_ss.video_decr3}}</a> 
             </p>
 
 

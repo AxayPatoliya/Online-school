@@ -122,6 +122,110 @@ class L9(db.Model):
     video_decr3 = db.Column(db.String(12), nullable=False)
     video_file3 = db.Column(db.String(12), nullable=False)
 
+class L10(db.Model):
+    sno = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    name = db.Column(db.String(80), nullable=False)
+    decr = db.Column(db.String(12), nullable=False)
+    pdf_decr1 = db.Column(db.String(12), nullable=False)
+    pdf_file1 = db.Column(db.String(12), nullable=False)
+    pdf_decr2 = db.Column(db.String(12), nullable=False)
+    pdf_file2 = db.Column(db.String(12), nullable=False)
+    pdf_decr3 = db.Column(db.String(12), nullable=False)
+    pdf_file3 = db.Column(db.String(12), nullable=False)
+    video_decr1 = db.Column(db.String(12), nullable=False)
+    video_file1 = db.Column(db.String(12), nullable=False)
+    video_decr2 = db.Column(db.String(12), nullable=False)
+    video_file2 = db.Column(db.String(12), nullable=False)
+    video_decr3 = db.Column(db.String(12), nullable=False)
+    video_file3 = db.Column(db.String(12), nullable=False)
+
+class L10_sk(db.Model):
+    sno = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    name = db.Column(db.String(80), nullable=False)
+    decr = db.Column(db.String(12), nullable=False)
+    pdf_decr1 = db.Column(db.String(12), nullable=False)
+    pdf_file1 = db.Column(db.String(12), nullable=False)
+    pdf_decr2 = db.Column(db.String(12), nullable=False)
+    pdf_file2 = db.Column(db.String(12), nullable=False)
+    pdf_decr3 = db.Column(db.String(12), nullable=False)
+    pdf_file3 = db.Column(db.String(12), nullable=False)
+    video_decr1 = db.Column(db.String(12), nullable=False)
+    video_file1 = db.Column(db.String(12), nullable=False)
+    video_decr2 = db.Column(db.String(12), nullable=False)
+    video_file2 = db.Column(db.String(12), nullable=False)
+    video_decr3 = db.Column(db.String(12), nullable=False)
+    video_file3 = db.Column(db.String(12), nullable=False)
+
+class L10_ss(db.Model):
+    sno = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    name = db.Column(db.String(80), nullable=False)
+    decr = db.Column(db.String(12), nullable=False)
+    pdf_decr1 = db.Column(db.String(12), nullable=False)
+    pdf_file1 = db.Column(db.String(12), nullable=False)
+    pdf_decr2 = db.Column(db.String(12), nullable=False)
+    pdf_file2 = db.Column(db.String(12), nullable=False)
+    pdf_decr3 = db.Column(db.String(12), nullable=False)
+    pdf_file3 = db.Column(db.String(12), nullable=False)
+    video_decr1 = db.Column(db.String(12), nullable=False)
+    video_file1 = db.Column(db.String(12), nullable=False)
+    video_decr2 = db.Column(db.String(12), nullable=False)
+    video_file2 = db.Column(db.String(12), nullable=False)
+    video_decr3 = db.Column(db.String(12), nullable=False)
+    video_file3 = db.Column(db.String(12), nullable=False)
+
+class L10_sci(db.Model):
+    sno = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    name = db.Column(db.String(80), nullable=False)
+    decr = db.Column(db.String(12), nullable=False)
+    pdf_decr1 = db.Column(db.String(12), nullable=False)
+    pdf_file1 = db.Column(db.String(12), nullable=False)
+    pdf_decr2 = db.Column(db.String(12), nullable=False)
+    pdf_file2 = db.Column(db.String(12), nullable=False)
+    pdf_decr3 = db.Column(db.String(12), nullable=False)
+    pdf_file3 = db.Column(db.String(12), nullable=False)
+    video_decr1 = db.Column(db.String(12), nullable=False)
+    video_file1 = db.Column(db.String(12), nullable=False)
+    video_decr2 = db.Column(db.String(12), nullable=False)
+    video_file2 = db.Column(db.String(12), nullable=False)
+    video_decr3 = db.Column(db.String(12), nullable=False)
+    video_file3 = db.Column(db.String(12), nullable=False)
+
+class L10_guj(db.Model):
+    sno = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    name = db.Column(db.String(80), nullable=False)
+    decr = db.Column(db.String(12), nullable=False)
+    pdf_decr1 = db.Column(db.String(12), nullable=False)
+    pdf_file1 = db.Column(db.String(12), nullable=False)
+    pdf_decr2 = db.Column(db.String(12), nullable=False)
+    pdf_file2 = db.Column(db.String(12), nullable=False)
+    pdf_decr3 = db.Column(db.String(12), nullable=False)
+    pdf_file3 = db.Column(db.String(12), nullable=False)
+    video_decr1 = db.Column(db.String(12), nullable=False)
+    video_file1 = db.Column(db.String(12), nullable=False)
+    video_decr2 = db.Column(db.String(12), nullable=False)
+    video_file2 = db.Column(db.String(12), nullable=False)
+    video_decr3 = db.Column(db.String(12), nullable=False)
+    video_file3 = db.Column(db.String(12), nullable=False)
+
+class L10_eng(db.Model):
+    sno = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    name = db.Column(db.String(80), nullable=False)
+    decr = db.Column(db.String(12), nullable=False)
+    pdf_decr1 = db.Column(db.String(12), nullable=False)
+    pdf_file1 = db.Column(db.String(12), nullable=False)
+    pdf_decr2 = db.Column(db.String(12), nullable=False)
+    pdf_file2 = db.Column(db.String(12), nullable=False)
+    pdf_decr3 = db.Column(db.String(12), nullable=False)
+    pdf_file3 = db.Column(db.String(12), nullable=False)
+    video_decr1 = db.Column(db.String(12), nullable=False)
+    video_file1 = db.Column(db.String(12), nullable=False)
+    video_decr2 = db.Column(db.String(12), nullable=False)
+    video_file2 = db.Column(db.String(12), nullable=False)
+    video_decr3 = db.Column(db.String(12), nullable=False)
+    video_file3 = db.Column(db.String(12), nullable=False)
+
+
+
 class L11(db.Model):
     sno = db.Column(db.Integer, primary_key=True, autoincrement=True)
     name = db.Column(db.String(80), nullable=False)
@@ -384,6 +488,67 @@ def delete_l9(sno):
         db.session.commit()
     return redirect('/dashboard')
 
+# deleting point for l10
+
+@app.route("/delete/l10/<string:sno>", methods = ['GET', 'POST'])
+def delete_l10(sno):
+    if ('user' in session and session['user'] == params['admin_user']):
+        l10 = L10.query.filter_by(sno=sno).first()
+        db.session.delete(l10)
+        db.session.commit()
+    return redirect('/dashboard')
+
+# deleting point for l10_sk
+
+@app.route("/delete/l10_sk/<string:sno>", methods = ['GET', 'POST'])
+def delete_l10_sk(sno):
+    if ('user' in session and session['user'] == params['admin_user']):
+        l10_sk = L10_sk.query.filter_by(sno=sno).first()
+        db.session.delete(l10_sk)
+        db.session.commit()
+    return redirect('/dashboard')
+
+# deleting point for l10_ss
+
+@app.route("/delete/l10_ss/<string:sno>", methods = ['GET', 'POST'])
+def delete_l10_ss(sno):
+    if ('user' in session and session['user'] == params['admin_user']):
+        l10_ss = L10_ss.query.filter_by(sno=sno).first()
+        db.session.delete(l10_ss)
+        db.session.commit()
+    return redirect('/dashboard')
+
+# deleting point for l10_sci
+
+@app.route("/delete/l10_sci/<string:sno>", methods = ['GET', 'POST'])
+def delete_l10_sci(sno):
+    if ('user' in session and session['user'] == params['admin_user']):
+        l10_sci = L10_sci.query.filter_by(sno=sno).first()
+        db.session.delete(l10_sci)
+        db.session.commit()
+    return redirect('/dashboard')
+
+# deleting point for l10_guj
+
+@app.route("/delete/l10_guj/<string:sno>", methods = ['GET', 'POST'])
+def delete_l10_guj(sno):
+    if ('user' in session and session['user'] == params['admin_user']):
+        l10_guj = L10_guj.query.filter_by(sno=sno).first()
+        db.session.delete(l10_guj)
+        db.session.commit()
+    return redirect('/dashboard')
+
+# deleting point for l10_eng
+
+@app.route("/delete/l10_eng/<string:sno>", methods = ['GET', 'POST'])
+def delete_l10_eng(sno):
+    if ('user' in session and session['user'] == params['admin_user']):
+        l10_eng = L10_eng.query.filter_by(sno=sno).first()
+        db.session.delete(l10_eng)
+        db.session.commit()
+    return redirect('/dashboard')
+
+
 # deleting point for l11
 
 @app.route("/delete/l11/<string:sno>", methods = ['GET', 'POST'])
@@ -515,7 +680,13 @@ def dashboard():
         l12_phy = L12_phy.query.all()
         l12_chem = L12_chem.query.all()
         l12_eng = L12_eng.query.all()
-        return render_template('dashboard.html', params=params, notice=notice, scroll=scroll, principal=principal, teacher=teacher, clerk=clerk, other=other, s9=s9, s10=s10, s11=s11, s12=s12, l9=l9, l11=l11, l11_chem=l11_chem, l11_phy=l11_phy, l11_eng=l11_eng, l12=l12, l12_chem=l12_chem, l12_phy=l12_phy, l12_eng=l12_eng)
+        l10 = L10.query.all()
+        l10_sk = L10_sk.query.all()
+        l10_ss = L10_ss.query.all()
+        l10_sci = L10_sci.query.all()
+        l10_guj = L10_guj.query.all()
+        l10_eng = L10_eng.query.all()
+        return render_template('dashboard.html', params=params, notice=notice, scroll=scroll, principal=principal, teacher=teacher, clerk=clerk, other=other, s9=s9, s10=s10, s11=s11, s12=s12, l9=l9, l11=l11, l11_chem=l11_chem, l11_phy=l11_phy, l11_eng=l11_eng, l12=l12, l12_chem=l12_chem, l12_phy=l12_phy, l12_eng=l12_eng, l10=l10, l10_ss=l10_ss, l10_sk=l10_sk, l10_sci=l10_sci, l10_guj=l10_guj, l10_eng=l10_eng)
 
 
     if request.method == 'POST':
@@ -848,6 +1019,298 @@ def edit_l9(sno):
 
             l9 = L9.query.filter_by(sno=sno).first()
             return render_template('edit_l9.html', params=params, l9=l9, sno=sno)
+
+# edit section for the l10
+
+@app.route("/edit/l10/<string:sno>", methods=["GET","POST"])
+def edit_l10(sno):
+        if ('user' in session and session['user'] == params['admin_user']):
+            if request.method == 'POST':
+                name = request.form.get('name')
+                decr = request.form.get('decr')
+                pdf_decr1 = request.form.get('pdf_decr1') 
+                pdf_file1 = request.form.get('pdf_file1')
+                pdf_decr2 = request.form.get('pdf_decr2') 
+                pdf_file2 = request.form.get('pdf_file2')
+                pdf_decr3 = request.form.get('pdf_decr3') 
+                pdf_file3 = request.form.get('pdf_file3')
+                video_decr1 = request.form.get('video_decr1') 
+                video_file1 = request.form.get('video_file1')
+                video_decr2 = request.form.get('video_decr2') 
+                video_file2 = request.form.get('video_file2')
+                video_decr3 = request.form.get('video_decr3') 
+                video_file3 = request.form.get('video_file3')
+
+                if sno == '0':
+                    l10 = L10(name=name, decr=decr, pdf_decr1=pdf_decr1, pdf_decr2=pdf_decr2, pdf_decr3=pdf_decr3, video_decr1=video_decr1, video_decr2=video_decr2, video_decr3=video_decr3, pdf_file1=pdf_file1, pdf_file2=pdf_file2, pdf_file3=pdf_file3, video_file1=video_file1, video_file2=video_file2, video_file3=video_file3)
+                    db.session.add(l10)
+                    db.session.commit()
+
+                else:
+                    l10 = L10.query.filter_by(sno=sno).first()
+                    l10.name = name
+                    l10.decr = decr
+                    l10.pdf_decr1 = pdf_decr1
+                    l10.pdf_file1 = pdf_file1
+                    l10.pdf_decr2 = pdf_decr2
+                    l10.pdf_file2 = pdf_file2
+                    l10.pdf_decr3 = pdf_decr3
+                    l10.pdf_file3 = pdf_file3
+                    l10.video_decr1 = video_decr1
+                    l10.video_file1 = video_file1
+                    l10.video_decr2 = video_decr2
+                    l10.video_file2 = video_file2
+                    l10.video_decr3 = video_decr3
+                    l10.video_file3 = video_file3
+                    db.session.commit()
+                    return redirect('/edit/l10/'+sno)
+
+            l10 = L10.query.filter_by(sno=sno).first()
+            return render_template('edit_l10.html', params=params, l10=l10, sno=sno)
+
+
+# edit section for the l10_sk
+
+@app.route("/edit/l10_sk/<string:sno>", methods=["GET","POST"])
+def edit_l10_sk(sno):
+        if ('user' in session and session['user'] == params['admin_user']):
+            if request.method == 'POST':
+                name = request.form.get('name')
+                decr = request.form.get('decr')
+                pdf_decr1 = request.form.get('pdf_decr1') 
+                pdf_file1 = request.form.get('pdf_file1')
+                pdf_decr2 = request.form.get('pdf_decr2') 
+                pdf_file2 = request.form.get('pdf_file2')
+                pdf_decr3 = request.form.get('pdf_decr3') 
+                pdf_file3 = request.form.get('pdf_file3')
+                video_decr1 = request.form.get('video_decr1') 
+                video_file1 = request.form.get('video_file1')
+                video_decr2 = request.form.get('video_decr2') 
+                video_file2 = request.form.get('video_file2')
+                video_decr3 = request.form.get('video_decr3') 
+                video_file3 = request.form.get('video_file3')
+
+                if sno == '0':
+                    l10_sk = L10_sk(name=name, decr=decr, pdf_decr1=pdf_decr1, pdf_decr2=pdf_decr2, pdf_decr3=pdf_decr3, video_decr1=video_decr1, video_decr2=video_decr2, video_decr3=video_decr3, pdf_file1=pdf_file1, pdf_file2=pdf_file2, pdf_file3=pdf_file3, video_file1=video_file1, video_file2=video_file2, video_file3=video_file3)
+                    db.session.add(l10_sk)
+                    db.session.commit()
+
+                else:
+                    l10_sk = L10_sk.query.filter_by(sno=sno).first()
+                    l10_sk.name = name
+                    l10_sk.decr = decr
+                    l10_sk.pdf_decr1 = pdf_decr1
+                    l10_sk.pdf_file1 = pdf_file1
+                    l10_sk.pdf_decr2 = pdf_decr2
+                    l10_sk.pdf_file2 = pdf_file2
+                    l10_sk.pdf_decr3 = pdf_decr3
+                    l10_sk.pdf_file3 = pdf_file3
+                    l10_sk.video_decr1 = video_decr1
+                    l10_sk.video_file1 = video_file1
+                    l10_sk.video_decr2 = video_decr2
+                    l10_sk.video_file2 = video_file2
+                    l10_sk.video_decr3 = video_decr3
+                    l10_sk.video_file3 = video_file3
+                    db.session.commit()
+                    return redirect('/edit/l10_sk/'+sno)
+
+            l10_sk = L10_sk.query.filter_by(sno=sno).first()
+            return render_template('edit_l10_sk.html', params=params, l10_sk=l10_sk, sno=sno)
+
+
+# edit section for the l10_ss
+
+@app.route("/edit/l10_ss/<string:sno>", methods=["GET","POST"])
+def edit_l10_ss(sno):
+        if ('user' in session and session['user'] == params['admin_user']):
+            if request.method == 'POST':
+                name = request.form.get('name')
+                decr = request.form.get('decr')
+                pdf_decr1 = request.form.get('pdf_decr1') 
+                pdf_file1 = request.form.get('pdf_file1')
+                pdf_decr2 = request.form.get('pdf_decr2') 
+                pdf_file2 = request.form.get('pdf_file2')
+                pdf_decr3 = request.form.get('pdf_decr3') 
+                pdf_file3 = request.form.get('pdf_file3')
+                video_decr1 = request.form.get('video_decr1') 
+                video_file1 = request.form.get('video_file1')
+                video_decr2 = request.form.get('video_decr2') 
+                video_file2 = request.form.get('video_file2')
+                video_decr3 = request.form.get('video_decr3') 
+                video_file3 = request.form.get('video_file3')
+
+                if sno == '0':
+                    l10_ss = L10_ss(name=name, decr=decr, pdf_decr1=pdf_decr1, pdf_decr2=pdf_decr2, pdf_decr3=pdf_decr3, video_decr1=video_decr1, video_decr2=video_decr2, video_decr3=video_decr3, pdf_file1=pdf_file1, pdf_file2=pdf_file2, pdf_file3=pdf_file3, video_file1=video_file1, video_file2=video_file2, video_file3=video_file3)
+                    db.session.add(l10_ss)
+                    db.session.commit()
+
+                else:
+                    l10_ss = L10_ss.query.filter_by(sno=sno).first()
+                    l10_ss.name = name
+                    l10_ss.decr = decr
+                    l10_ss.pdf_decr1 = pdf_decr1
+                    l10_ss.pdf_file1 = pdf_file1
+                    l10_ss.pdf_decr2 = pdf_decr2
+                    l10_ss.pdf_file2 = pdf_file2
+                    l10_ss.pdf_decr3 = pdf_decr3
+                    l10_ss.pdf_file3 = pdf_file3
+                    l10_ss.video_decr1 = video_decr1
+                    l10_ss.video_file1 = video_file1
+                    l10_ss.video_decr2 = video_decr2
+                    l10_ss.video_file2 = video_file2
+                    l10_ss.video_decr3 = video_decr3
+                    l10_ss.video_file3 = video_file3
+                    db.session.commit()
+                    return redirect('/edit/l10_ss/'+sno)
+
+            l10_ss = L10_ss.query.filter_by(sno=sno).first()
+            return render_template('edit_l10_ss.html', params=params, l10_ss=l10_ss, sno=sno)
+
+# edit section for the l10_sci
+
+@app.route("/edit/l10_sci/<string:sno>", methods=["GET","POST"])
+def edit_l10_sci(sno):
+        if ('user' in session and session['user'] == params['admin_user']):
+            if request.method == 'POST':
+                name = request.form.get('name')
+                decr = request.form.get('decr')
+                pdf_decr1 = request.form.get('pdf_decr1') 
+                pdf_file1 = request.form.get('pdf_file1')
+                pdf_decr2 = request.form.get('pdf_decr2') 
+                pdf_file2 = request.form.get('pdf_file2')
+                pdf_decr3 = request.form.get('pdf_decr3') 
+                pdf_file3 = request.form.get('pdf_file3')
+                video_decr1 = request.form.get('video_decr1') 
+                video_file1 = request.form.get('video_file1')
+                video_decr2 = request.form.get('video_decr2') 
+                video_file2 = request.form.get('video_file2')
+                video_decr3 = request.form.get('video_decr3') 
+                video_file3 = request.form.get('video_file3')
+
+                if sno == '0':
+                    l10_sci = L10_sci(name=name, decr=decr, pdf_decr1=pdf_decr1, pdf_decr2=pdf_decr2, pdf_decr3=pdf_decr3, video_decr1=video_decr1, video_decr2=video_decr2, video_decr3=video_decr3, pdf_file1=pdf_file1, pdf_file2=pdf_file2, pdf_file3=pdf_file3, video_file1=video_file1, video_file2=video_file2, video_file3=video_file3)
+                    db.session.add(l10_sci)
+                    db.session.commit()
+
+                else:
+                    l10_sci = L10_sci.query.filter_by(sno=sno).first()
+                    l10_sci.name = name
+                    l10_sci.decr = decr
+                    l10_sci.pdf_decr1 = pdf_decr1
+                    l10_sci.pdf_file1 = pdf_file1
+                    l10_sci.pdf_decr2 = pdf_decr2
+                    l10_sci.pdf_file2 = pdf_file2
+                    l10_sci.pdf_decr3 = pdf_decr3
+                    l10_sci.pdf_file3 = pdf_file3
+                    l10_sci.video_decr1 = video_decr1
+                    l10_sci.video_file1 = video_file1
+                    l10_sci.video_decr2 = video_decr2
+                    l10_sci.video_file2 = video_file2
+                    l10_sci.video_decr3 = video_decr3
+                    l10_sci.video_file3 = video_file3
+                    db.session.commit()
+                    return redirect('/edit/l10_sci/'+sno)
+
+            l10_sci = L10_sci.query.filter_by(sno=sno).first()
+            return render_template('edit_l10_sci.html', params=params, l10_sci=l10_sci, sno=sno)
+
+
+# edit section for the l10_guj
+
+@app.route("/edit/l10_guj/<string:sno>", methods=["GET","POST"])
+def edit_l10_guj(sno):
+        if ('user' in session and session['user'] == params['admin_user']):
+            if request.method == 'POST':
+                name = request.form.get('name')
+                decr = request.form.get('decr')
+                pdf_decr1 = request.form.get('pdf_decr1') 
+                pdf_file1 = request.form.get('pdf_file1')
+                pdf_decr2 = request.form.get('pdf_decr2') 
+                pdf_file2 = request.form.get('pdf_file2')
+                pdf_decr3 = request.form.get('pdf_decr3') 
+                pdf_file3 = request.form.get('pdf_file3')
+                video_decr1 = request.form.get('video_decr1') 
+                video_file1 = request.form.get('video_file1')
+                video_decr2 = request.form.get('video_decr2') 
+                video_file2 = request.form.get('video_file2')
+                video_decr3 = request.form.get('video_decr3') 
+                video_file3 = request.form.get('video_file3')
+
+                if sno == '0':
+                    l10_guj = L10_guj(name=name, decr=decr, pdf_decr1=pdf_decr1, pdf_decr2=pdf_decr2, pdf_decr3=pdf_decr3, video_decr1=video_decr1, video_decr2=video_decr2, video_decr3=video_decr3, pdf_file1=pdf_file1, pdf_file2=pdf_file2, pdf_file3=pdf_file3, video_file1=video_file1, video_file2=video_file2, video_file3=video_file3)
+                    db.session.add(l10_guj)
+                    db.session.commit()
+
+                else:
+                    l10_guj = L10_guj.query.filter_by(sno=sno).first()
+                    l10_guj.name = name
+                    l10_guj.decr = decr
+                    l10_guj.pdf_decr1 = pdf_decr1
+                    l10_guj.pdf_file1 = pdf_file1
+                    l10_guj.pdf_decr2 = pdf_decr2
+                    l10_guj.pdf_file2 = pdf_file2
+                    l10_guj.pdf_decr3 = pdf_decr3
+                    l10_guj.pdf_file3 = pdf_file3
+                    l10_guj.video_decr1 = video_decr1
+                    l10_guj.video_file1 = video_file1
+                    l10_guj.video_decr2 = video_decr2
+                    l10_guj.video_file2 = video_file2
+                    l10_guj.video_decr3 = video_decr3
+                    l10_guj.video_file3 = video_file3
+                    db.session.commit()
+                    return redirect('/edit/l10_guj/'+sno)
+
+            l10_guj = L10_guj.query.filter_by(sno=sno).first()
+            return render_template('edit_l10_guj.html', params=params, l10_guj=l10_guj, sno=sno)
+
+# edit section for the l10_eng
+
+@app.route("/edit/l10_eng/<string:sno>", methods=["GET","POST"])
+def edit_l10_eng(sno):
+        if ('user' in session and session['user'] == params['admin_user']):
+            if request.method == 'POST':
+                name = request.form.get('name')
+                decr = request.form.get('decr')
+                pdf_decr1 = request.form.get('pdf_decr1') 
+                pdf_file1 = request.form.get('pdf_file1')
+                pdf_decr2 = request.form.get('pdf_decr2') 
+                pdf_file2 = request.form.get('pdf_file2')
+                pdf_decr3 = request.form.get('pdf_decr3') 
+                pdf_file3 = request.form.get('pdf_file3')
+                video_decr1 = request.form.get('video_decr1') 
+                video_file1 = request.form.get('video_file1')
+                video_decr2 = request.form.get('video_decr2') 
+                video_file2 = request.form.get('video_file2')
+                video_decr3 = request.form.get('video_decr3') 
+                video_file3 = request.form.get('video_file3')
+
+                if sno == '0':
+                    l10_eng = L10_eng(name=name, decr=decr, pdf_decr1=pdf_decr1, pdf_decr2=pdf_decr2, pdf_decr3=pdf_decr3, video_decr1=video_decr1, video_decr2=video_decr2, video_decr3=video_decr3, pdf_file1=pdf_file1, pdf_file2=pdf_file2, pdf_file3=pdf_file3, video_file1=video_file1, video_file2=video_file2, video_file3=video_file3)
+                    db.session.add(l10_eng)
+                    db.session.commit()
+
+                else:
+                    l10_eng = L10_eng.query.filter_by(sno=sno).first()
+                    l10_eng.name = name
+                    l10_eng.decr = decr
+                    l10_eng.pdf_decr1 = pdf_decr1
+                    l10_eng.pdf_file1 = pdf_file1
+                    l10_eng.pdf_decr2 = pdf_decr2
+                    l10_eng.pdf_file2 = pdf_file2
+                    l10_eng.pdf_decr3 = pdf_decr3
+                    l10_eng.pdf_file3 = pdf_file3
+                    l10_eng.video_decr1 = video_decr1
+                    l10_eng.video_file1 = video_file1
+                    l10_eng.video_decr2 = video_decr2
+                    l10_eng.video_file2 = video_file2
+                    l10_eng.video_decr3 = video_decr3
+                    l10_eng.video_file3 = video_file3
+                    db.session.commit()
+                    return redirect('/edit/l10_eng/'+sno)
+
+            l10_eng = L10_eng.query.filter_by(sno=sno).first()
+            return render_template('edit_l10_eng.html', params=params, l10_eng=l10_eng, sno=sno)
+
 
 # edit section for the l11
 
@@ -1327,11 +1790,163 @@ def list_9(name):
 
 
 
-@app.route("/subject-10/list-10/<string:name>")
+@app.route("/subject-10/list-10/<name>")
 def list_10(name):
-    return render_template('list_10.html', params=params, name=name)
+    if request.method == 'POST':
+        name = request.form.get('name')
+        decr = request.form.get('decr')
+        pdf_decr1 = request.form.get('pdf_decr1') 
+        pdf_file1 = request.form.get('pdf_file1')
+        pdf_decr2 = request.form.get('pdf_decr2') 
+        pdf_file2 = request.form.get('pdf_file2')
+        pdf_decr3 = request.form.get('pdf_decr3') 
+        pdf_file3 = request.form.get('pdf_file3')
+        video_decr1 = request.form.get('video_decr1') 
+        video_file1 = request.form.get('video_file1')
+        video_decr2 = request.form.get('video_decr2')
+        video_file2 = request.form.get('video_file2')
+        video_decr3 = request.form.get('video_decr3') 
+        video_file3 = request.form.get('video_file3')
+        l10 = L10(name=name, decr=decr, pdf_decr1=pdf_decr1, pdf_decr2=pdf_decr2, pdf_decr3=pdf_decr3, video_decr1=video_decr1, video_decr2=video_decr2, video_decr3=video_decr3, pdf_file1=pdf_file1, pdf_file2=pdf_file2, pdf_file3=pdf_file3, video_file1=video_file1, video_file2=video_file2, video_file3=video_file3)
+        db.session.add(l10)
+        db.session.commit()
+    l10 = L11.query.filter_by().all()
+    l10_guj = L10_guj.query.filter_by().all()
+    l10_ss = L10_ss.query.filter_by().all()
+    l10_sk = L10_sk.query.filter_by().all()
+    l10_eng = L10_eng.query.filter_by().all()
+    l10_sci = L10_sci.query.filter_by().all()
+    if name == 'Maths':
+        return  render_template('list_10.html', params=params, name=name, l10=l10)
+    if name == 'Social-Science':
+        return render_template('list_10_ss.html', params=params, name=name, l10_ss=l10_ss)
+    if name == 'Sanskrit':
+        return render_template('list_10_sk.html', params=params, name=name, l10_sk=l10_sk)
+    if name == 'Science':
+        return render_template('list_10_sci.html', params=params, name=name, l10_sci=l10_sci)
+    if name == 'Gujarati':
+        return render_template('list_10_guj.html', params=params, name=name, l10_guj=l10_guj)
+    if name == 'English':
+        return render_template('list_10_eng.html', params=params, name=name, l10_eng=l10_eng)
 
-    
+@app.route("/subject-10/list-10-ss/<string:name>", methods=["GET", "POST"])
+def list_10_ss(name):
+    if request.method == 'POST':
+        name = request.form.get('name')
+        decr = request.form.get('decr')
+        pdf_decr1 = request.form.get('pdf_decr1') 
+        pdf_file1 = request.form.get('pdf_file1')
+        pdf_decr2 = request.form.get('pdf_decr2') 
+        pdf_file2 = request.form.get('pdf_file2')
+        pdf_decr3 = request.form.get('pdf_decr3') 
+        pdf_file3 = request.form.get('pdf_file3')
+        video_decr1 = request.form.get('video_decr1') 
+        video_file1 = request.form.get('video_file1')
+        video_decr2 = request.form.get('video_decr2')
+        video_file2 = request.form.get('video_file2')
+        video_decr3 = request.form.get('video_decr3') 
+        video_file3 = request.form.get('video_file3')
+        l10_ss = L10_ss(name=name, decr=decr, pdf_decr1=pdf_decr1, pdf_decr2=pdf_decr2, pdf_decr3=pdf_decr3, video_decr1=video_decr1, video_decr2=video_decr2, video_decr3=video_decr3, pdf_file1=pdf_file1, pdf_file2=pdf_file2, pdf_file3=pdf_file3, video_file1=video_file1, video_file2=video_file2, video_file3=video_file3)
+        db.session.add(l10_ss)
+        db.session.commit()
+    l10_ss = L10_ss.query.filter_by().all()
+    return  render_template('list_10_ss.html', params=params, name=name, l10_ss=l10_ss)
+
+@app.route("/subject-10/list-10-sk/<string:name>", methods=["GET", "POST"])
+def list_10_sk(name):
+    if request.method == 'POST':
+        name = request.form.get('name')
+        decr = request.form.get('decr')
+        pdf_decr1 = request.form.get('pdf_decr1') 
+        pdf_file1 = request.form.get('pdf_file1')
+        pdf_decr2 = request.form.get('pdf_decr2') 
+        pdf_file2 = request.form.get('pdf_file2')
+        pdf_decr3 = request.form.get('pdf_decr3') 
+        pdf_file3 = request.form.get('pdf_file3')
+        video_decr1 = request.form.get('video_decr1') 
+        video_file1 = request.form.get('video_file1')
+        video_decr2 = request.form.get('video_decr2')
+        video_file2 = request.form.get('video_file2')
+        video_decr3 = request.form.get('video_decr3') 
+        video_file3 = request.form.get('video_file3')
+        l10_sk = L10_sk(name=name, decr=decr, pdf_decr1=pdf_decr1, pdf_decr2=pdf_decr2, pdf_decr3=pdf_decr3, video_decr1=video_decr1, video_decr2=video_decr2, video_decr3=video_decr3, pdf_file1=pdf_file1, pdf_file2=pdf_file2, pdf_file3=pdf_file3, video_file1=video_file1, video_file2=video_file2, video_file3=video_file3)
+        db.session.add(l10_sk)
+        db.session.commit()
+    l10_sk = L10_sk.query.filter_by().all()
+    return  render_template('list_10_sk.html', params=params, name=name, l10_sk=l10_sk)
+
+
+@app.route("/subject-10/list-10-sci/<string:name>", methods=["GET", "POST"])
+def list_10_sci(name):
+    if request.method == 'POST':
+        name = request.form.get('name')
+        decr = request.form.get('decr')
+        pdf_decr1 = request.form.get('pdf_decr1') 
+        pdf_file1 = request.form.get('pdf_file1')
+        pdf_decr2 = request.form.get('pdf_decr2') 
+        pdf_file2 = requestciform.get('pdf_file2')
+        pdf_decr3 = request.form.get('pdf_decr3') 
+        pdf_file3 = request.form.get('pdf_file3')
+        video_decr1 = request.form.get('video_decr1') 
+        video_file1 = request.form.get('video_file1')
+        video_decr2 = request.form.get('video_decr2')
+        video_file2 = request.form.get('video_file2')
+        video_decr3 = request.form.get('video_decr3') 
+        video_file3 = request.form.get('video_file3')
+        l10_sci = L10_sci(name=name, decr=decr, pdf_decr1=pdf_decr1, pdf_decr2=pdf_decr2, pdf_decr3=pdf_decr3, video_decr1=video_decr1, video_decr2=video_decr2, video_decr3=video_decr3, pdf_file1=pdf_file1, pdf_file2=pdf_file2, pdf_file3=pdf_file3, video_file1=video_file1, video_file2=video_file2, video_file3=video_file3)
+        db.session.add(l10_sci)
+        db.session.commit()
+    l10_sci = L10_sci.query.filter_by().all()
+    return  render_template('list_10_sci.html', params=params, name=name, l10_sci=l10_sci)
+
+@app.route("/subject-10/list-10-guj/<string:name>", methods=["GET", "POST"])
+def list_10_guj(name):
+    if request.method == 'POST':
+        name = request.form.get('name')
+        decr = request.form.get('decr')
+        pdf_decr1 = request.form.get('pdf_decr1') 
+        pdf_file1 = request.form.get('pdf_file1')
+        pdf_decr2 = request.form.get('pdf_decr2') 
+        pdf_file2 = requestciform.get('pdf_file2')
+        pdf_decr3 = request.form.get('pdf_decr3') 
+        pdf_file3 = request.form.get('pdf_file3')
+        video_decr1 = request.form.get('video_decr1') 
+        video_file1 = request.form.get('video_file1')
+        video_decr2 = request.form.get('video_decr2')
+        video_file2 = request.form.get('video_file2')
+        video_decr3 = request.form.get('video_decr3') 
+        video_file3 = request.form.get('video_file3')
+        l10_guj = L10_guj(name=name, decr=decr, pdf_decr1=pdf_decr1, pdf_decr2=pdf_decr2, pdf_decr3=pdf_decr3, video_decr1=video_decr1, video_decr2=video_decr2, video_decr3=video_decr3, pdf_file1=pdf_file1, pdf_file2=pdf_file2, pdf_file3=pdf_file3, video_file1=video_file1, video_file2=video_file2, video_file3=video_file3)
+        db.session.add(l10_guj)
+        db.session.commit()
+    l10_guj = L10_guj.query.filter_by().all()
+    return  render_template('list_10_guj.html', params=params, name=name, l10_guj=l10_guj)
+
+
+@app.route("/subject-10/list-10-eng/<string:name>", methods=["GET", "POST"])
+def list_10_eng(name):
+    if request.method == 'POST':
+        name = request.form.get('name')
+        decr = request.form.get('decr')
+        pdf_decr1 = request.form.get('pdf_decr1') 
+        pdf_file1 = request.form.get('pdf_file1')
+        pdf_decr2 = request.form.get('pdf_decr2') 
+        pdf_file2 = requestciform.get('pdf_file2')
+        pdf_decr3 = request.form.get('pdf_decr3') 
+        pdf_file3 = request.form.get('pdf_file3')
+        video_decr1 = request.form.get('video_decr1') 
+        video_file1 = request.form.get('video_file1')
+        video_decr2 = request.form.get('video_decr2')
+        video_file2 = request.form.get('video_file2')
+        video_decr3 = request.form.get('video_decr3') 
+        video_file3 = request.form.get('video_file3')
+        l10_eng = L10_eng(name=name, decr=decr, pdf_decr1=pdf_decr1, pdf_decr2=pdf_decr2, pdf_decr3=pdf_decr3, video_decr1=video_decr1, video_decr2=video_decr2, video_decr3=video_decr3, pdf_file1=pdf_file1, pdf_file2=pdf_file2, pdf_file3=pdf_file3, video_file1=video_file1, video_file2=video_file2, video_file3=video_file3)
+        db.session.add(l10_eng)
+        db.session.commit()
+    l10_eng = L10_eng.query.filter_by().all()
+    return  render_template('list_10_eng.html', params=params, name=name, l10_eng=l10_eng)
+
+
     
     
     
