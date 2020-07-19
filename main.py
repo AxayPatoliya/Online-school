@@ -1790,7 +1790,7 @@ def list_9(name):
 
 
 
-@app.route("/subject-10/list-10/<name>")
+@app.route("/subject-10/list-10/<name>", methods=["GET", "POST"])
 def list_10(name):
     if request.method == 'POST':
         name = request.form.get('name')
