@@ -49,6 +49,7 @@ class Notice(db.Model):
     category = db.Column(db.String(80), nullable=False)
     title = db.Column(db.String(80), nullable=False)
     content = db.Column(db.String(120), nullable=False)
+    link = db.Column(db.String(12), nullable=False)
     img_file = db.Column(db.String(12), nullable=False)
     date = db.Column(db.String(12), nullable=True)
     slug = db.Column(db.String(21), unique=True, nullable=False)
@@ -882,12 +883,13 @@ def edit(sno):
                 box_title = request.form.get('title')
                 category = request.form.get('category')
                 content = request.form.get('content')
+                link = request.form.get('link')
                 img_file = request.form.get('img_file')
                 slug = request.form.get('slug')
                 date = datetime.now()
 
                 if sno == '0':
-                    notice = Notice(category=category, title=box_title, content=content, slug=slug, img_file=img_file)
+                    notice = Notice(category=category, title=box_title, content=content, slug=slug, img_file=img_file, link=link)
                     db.session.add(notice)
                     db.session.commit()
 
@@ -896,6 +898,7 @@ def edit(sno):
                     notice.title = box_title
                     notice.category = category
                     notice.content = content
+                    notice.link = link
                     notice.img_file = img_file
                     notice.slug = slug
                     notice.date = date
