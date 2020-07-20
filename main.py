@@ -47,8 +47,15 @@ class Contacts(db.Model):
 class Notice(db.Model):
     sno = db.Column(db.Integer, primary_key=True, autoincrement=True)
     category = db.Column(db.String(80), nullable=False)
+   
     title = db.Column(db.String(80), nullable=False)
+    
     content = db.Column(db.String(120), nullable=False)
+
+    title_one = db.Column(db.String(80), nullable=False)
+    
+    content_one = db.Column(db.String(120), nullable=False)
+   
     link_youtube_1 = db.Column(db.String(12), nullable=False)
     link_youtube_2 = db.Column(db.String(12), nullable=False)
     link_pdf_1 = db.Column(db.String(12), nullable=False)
@@ -888,9 +895,13 @@ def dashboard():
 def edit(sno):
         if ('user' in session and session['user'] == params['admin_user']):
             if request.method == 'POST':
-                box_title = request.form.get('title')
                 category = request.form.get('category')
+                title = request.form.get('title')
                 content = request.form.get('content')
+
+                title_one = request.form.get('title_one')
+                content_one = request.form.get('content_one')
+                
                 link_youtube_1 = request.form.get('link_youtube_1')
                 link_youtube_2 = request.form.get('link_youtube_2')
                 link_pdf_1 = request.form.get('link_pdf_1')
@@ -905,15 +916,21 @@ def edit(sno):
                 date = datetime.now()
 
                 if sno == '0':
-                    notice = Notice(category=category, title=box_title, content=content, slug=slug, img_file=img_file, link_youtube_1=link_youtube_1, link_youtube_2=link_youtube_2, link_pdf_1=link_pdf_1, link_pdf_2=link_pdf_2, link_form_1=link_form_1, link_form_2=link_form_2, decr_youtube_2=decr_youtube_2, decr_pdf_2=decr_pdf_2, decr_form_2=decr_form_2)
+                    notice = Notice(category=category, title=title, content=content, title_one=title_one, content_one=content_one, slug=slug, img_file=img_file, link_youtube_1=link_youtube_1, link_youtube_2=link_youtube_2, link_pdf_1=link_pdf_1, link_pdf_2=link_pdf_2, link_form_1=link_form_1, link_form_2=link_form_2, decr_youtube_2=decr_youtube_2, decr_pdf_2=decr_pdf_2, decr_form_2=decr_form_2)
                     db.session.add(notice)
                     db.session.commit()
 
                 else:
                     notice = Notice.query.filter_by(sno=sno).first()
-                    notice.title = box_title
                     notice.category = category
+                    notice.title = title
+                    
                     notice.content = content
+
+                    notice.title_one = title_one
+                    
+                    notice.content_one = content_one
+                    
                     notice.link_youtube_1 = link_youtube_1
                     notice.link_youtube_2 = link_youtube_2
                     notice.link_pdf_1 = link_pdf_1

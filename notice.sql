@@ -6,6 +6,8 @@ CREATE TABLE notice
     category text COLLATE pg_catalog."default" NOT NULL,
     title text COLLATE pg_catalog."default" NOT NULL,
     content text COLLATE pg_catalog."default" NOT NULL,
+    title_one text COLLATE pg_catalog."default" NOT NULL,
+    content_one text COLLATE pg_catalog."default" NOT NULL,
     link_youtube_1 character varying(500) COLLATE pg_catalog."default" NOT NULL,
     link_pdf_1 character varying(500) COLLATE pg_catalog."default" NOT NULL,
     link_form_1 character varying(500) COLLATE pg_catalog."default" NOT NULL,
