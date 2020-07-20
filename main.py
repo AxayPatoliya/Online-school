@@ -49,7 +49,15 @@ class Notice(db.Model):
     category = db.Column(db.String(80), nullable=False)
     title = db.Column(db.String(80), nullable=False)
     content = db.Column(db.String(120), nullable=False)
-    link = db.Column(db.String(12), nullable=False)
+    link_youtube_1 = db.Column(db.String(12), nullable=False)
+    link_youtube_2 = db.Column(db.String(12), nullable=False)
+    link_pdf_1 = db.Column(db.String(12), nullable=False)
+    link_pdf_2 = db.Column(db.String(12), nullable=False)
+    link_form_1 = db.Column(db.String(12), nullable=False)
+    link_form_2 = db.Column(db.String(12), nullable=False)
+    decr_youtube_2 = db.Column(db.String(12), nullable=False)
+    decr_pdf_2 = db.Column(db.String(12), nullable=False)
+    decr_form_2 = db.Column(db.String(12), nullable=False)
     img_file = db.Column(db.String(12), nullable=False)
     date = db.Column(db.String(12), nullable=True)
     slug = db.Column(db.String(21), unique=True, nullable=False)
@@ -883,13 +891,21 @@ def edit(sno):
                 box_title = request.form.get('title')
                 category = request.form.get('category')
                 content = request.form.get('content')
-                link = request.form.get('link')
+                link_youtube_1 = request.form.get('link_youtube_1')
+                link_youtube_2 = request.form.get('link_youtube_2')
+                link_pdf_1 = request.form.get('link_pdf_1')
+                link_pdf_2 = request.form.get('link_pdf_2')
+                link_form_1 = request.form.get('link_form_1')
+                link_form_2 = request.form.get('link_form_2')
+                decr_youtube_2 = request.form.get('decr_youtube_2')
+                decr_pdf_2 = request.form.get('decr_pdf_2')
+                decr_form_2 = request.form.get('decr_form_2')
                 img_file = request.form.get('img_file')
                 slug = request.form.get('slug')
                 date = datetime.now()
 
                 if sno == '0':
-                    notice = Notice(category=category, title=box_title, content=content, slug=slug, img_file=img_file, link=link)
+                    notice = Notice(category=category, title=box_title, content=content, slug=slug, img_file=img_file, link_youtube_1=link_youtube_1, link_youtube_2=link_youtube_2, link_pdf_1=link_pdf_1, link_pdf_2=link_pdf_2, link_form_1=link_form_1, link_form_2=link_form_2, decr_youtube_2=decr_youtube_2, decr_pdf_2=decr_pdf_2, decr_form_2=decr_form_2)
                     db.session.add(notice)
                     db.session.commit()
 
@@ -898,7 +914,15 @@ def edit(sno):
                     notice.title = box_title
                     notice.category = category
                     notice.content = content
-                    notice.link = link
+                    notice.link_youtube_1 = link_youtube_1
+                    notice.link_youtube_2 = link_youtube_2
+                    notice.link_pdf_1 = link_pdf_1
+                    notice.link_pdf_2 = link_pdf_2
+                    notice.link_form_1 = link_form_1
+                    notice.link_form_2 = link_form_2
+                    notice.decr_youtube_2 = decr_youtube_2
+                    notice.decr_pdf_2 = decr_pdf_2
+                    notice.decr_form_2 = decr_form_2
                     notice.img_file = img_file
                     notice.slug = slug
                     notice.date = date
@@ -2749,7 +2773,7 @@ def list_12_chem(name):
         db.session.add(l12_chem)
         db.session.commit()
     l12_chem = L12_chem.query.filter_by().all()
-    return  render_template('list_12_chem.html', params=params, name=name, l12_chem=l12_chem)
+    return render_template('list_12_chem.html', params=params, name=name, l12_chem=l12_chem)
 
 
 @app.route("/subject-12/list-12-phy/<string:name>", methods=["GET", "POST"])
@@ -2773,7 +2797,7 @@ def list_12_phy(name):
         db.session.add(l12_phy)
         db.session.commit()
     l12_phy = L12_phy.query.filter_by().all()
-    return  render_template('list_12_phy.html', params=params, name=name, l12_phy=l12_phy)
+    return render_template('list_12_phy.html', params=params, name=name, l12_phy=l12_phy)
 
 @app.route("/subject-12/list-12-eng/<string:name>", methods=["GET", "POST"])
 def list_12_eng(name):
@@ -2796,7 +2820,7 @@ def list_12_eng(name):
         db.session.add(l12_eng)
         db.session.commit()
     l12_eng = L12_eng.query.filter_by().all()
-    return  render_template('list_12_eng.html', params=params, name=name, l12_eng=l12_eng)
+    return render_template('list_12_eng.html', params=params, name=name, l12_eng=l12_eng)
 
 
 @app.route("/subject-9", methods=["GET", "POST"])
@@ -2808,7 +2832,7 @@ def subject_9():
         db.session.add(s9)
         db.session.commit()
     s9 = S9.query.filter_by().all()
-    return  render_template('subject_9.html', params=params, s9=s9)
+    return render_template('subject_9.html', params=params, s9=s9)
 
 @app.route("/subject-10", methods=["GET", "POST"])
 def subject_10():
@@ -2819,7 +2843,7 @@ def subject_10():
         db.session.add(s10)
         db.session.commit()
     s10 = S10.query.filter_by().all()
-    return  render_template('subject_10.html', params=params, s10=s10)
+    return render_template('subject_10.html', params=params, s10=s10)
 
 @app.route("/subject-11", methods=["GET", "POST"])
 def subject_11():
@@ -2830,7 +2854,7 @@ def subject_11():
         db.session.add(s11)
         db.session.commit()
     s11 = S11.query.filter_by().all()
-    return  render_template('subject_11.html', params=params, s11=s11)
+    return render_template('subject_11.html', params=params, s11=s11)
 
 @app.route("/subject-12", methods=["GET", "POST"])
 def subject_12():
@@ -2841,12 +2865,12 @@ def subject_12():
         db.session.add(s12)
         db.session.commit()
     s12 = S12.query.filter_by().all()
-    return  render_template('subject_12.html', params=params, s12=s12)
+    return render_template('subject_12.html', params=params, s12=s12)
 
 
 @app.route("/standard")
 def standard():
-    return  render_template('standard.html', params=params)
+    return render_template('standard.html', params=params)
 
 @app.route("/notice/<string:notice_slug>", methods = ["GET"])
 def notice_route(notice_slug):

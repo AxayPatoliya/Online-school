@@ -3,6 +3,9 @@
 
 
 {% set fname = 'img/' + notice.img_file %}
+{% set ffname = 'img/' + notice.link_pdf_1 %}
+{% set fffname = 'img/' + notice.link_pdf_2 %}
+
 <section class="text-gray-700 body-font">
     <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
       <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero" src="{{url_for('static', filename = fname)}}">
@@ -11,14 +14,29 @@
         <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">{{notice.title}}</h1>
         <p class="mb-8 leading-relaxed">{{notice.content}}</p>
         <div class="flex justify-center">
-          
-          
-            <!-- <a class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg" type="button" href="/notice-list">&larr; Back</a>  -->
-            <button style="color: red;" style="font-size:24px"><a target="_blank" style="color: red;" href="{{notice.link}}"><i class="fa fa-youtube-play" style="font-size:48px;color:red"> </i></a></button>
+            <button style="color: red;" style="font-size:24px"><a target="_blank" style="color: red;" href="{{notice.link_youtube_1}}"><i class="fa fa-youtube-play" style="font-size:48px;color:red"> </i></a></button>
+            <button style="color: black; padding-right: 1rem; padding-left: 1rem;" style="font-size:24px"><a target="_blank" style="color: black;" href="{{ url_for('static', filename=ffname) }}"><i class="fa fa-file-pdf-o" style="font-size:48px;color:black"> </i></a></button>
+            <button style="color: green;" style="font-size:24px"><a target="_blank" style="color: green;" href="{{notice.link_form_1}}"><i class="fa fa-vcard-o" style="font-size:48px;color:blueviolet"> </i></a></button>
+          </div>
+      
+          <div class="flex justify-center">
+           <a style="color: red;" href="{{notice.link_youtube_2}}">{{notice.decr_youtube_2}}</a>
+          </div>
 
+          <div class="flex justify-center">
+            <a style="color: black;" href="{{ url_for('static', filename=fffname) }}">{{notice.decr_pdf_2}}</a>
+          </div>
           
-        </div>
-            
+          <div class="flex justify-center">
+            <a style="color: red;" href="{{notice.link_form_2}}">{{notice.decr_form_2}}</a>
+          </div>
+
+
+
+
+
+
+
       </div>
     </div>
 </section>
