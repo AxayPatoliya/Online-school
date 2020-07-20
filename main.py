@@ -49,6 +49,12 @@ class Notice(db.Model):
     category = db.Column(db.String(80), nullable=False)
     title = db.Column(db.String(80), nullable=False)
     content = db.Column(db.String(120), nullable=False)
+    title_1 = db.Column(db.String(80), nullable=False)
+    content_1 = db.Column(db.String(120), nullable=False)
+    title_2 = db.Column(db.String(80), nullable=False)
+    content_2 = db.Column(db.String(120), nullable=False)
+    title_3 = db.Column(db.String(80), nullable=False)
+    content_3 = db.Column(db.String(120), nullable=False)
     link_youtube_1 = db.Column(db.String(12), nullable=False)
     link_youtube_2 = db.Column(db.String(12), nullable=False)
     link_pdf_1 = db.Column(db.String(12), nullable=False)
@@ -891,6 +897,12 @@ def edit(sno):
                 box_title = request.form.get('title')
                 category = request.form.get('category')
                 content = request.form.get('content')
+                title_1 = request.form.get('title_1')
+                content_1 = request.form.get('content_1')
+                title_2 = request.form.get('title_2')
+                content_2 = request.form.get('content_2')
+                title_3 = request.form.get('title_3')
+                content_3 = request.form.get('content_3')
                 link_youtube_1 = request.form.get('link_youtube_1')
                 link_youtube_2 = request.form.get('link_youtube_2')
                 link_pdf_1 = request.form.get('link_pdf_1')
@@ -905,7 +917,7 @@ def edit(sno):
                 date = datetime.now()
 
                 if sno == '0':
-                    notice = Notice(category=category, title=box_title, content=content, slug=slug, img_file=img_file, link_youtube_1=link_youtube_1, link_youtube_2=link_youtube_2, link_pdf_1=link_pdf_1, link_pdf_2=link_pdf_2, link_form_1=link_form_1, link_form_2=link_form_2, decr_youtube_2=decr_youtube_2, decr_pdf_2=decr_pdf_2, decr_form_2=decr_form_2)
+                    notice = Notice(category=category, title=box_title, title_1=title_1, title_2=title_2, title_3=title_3, content=content, content_1=content_1, content_2=content_2, content_3=content_3, slug=slug, img_file=img_file, link_youtube_1=link_youtube_1, link_youtube_2=link_youtube_2, link_pdf_1=link_pdf_1, link_pdf_2=link_pdf_2, link_form_1=link_form_1, link_form_2=link_form_2, decr_youtube_2=decr_youtube_2, decr_pdf_2=decr_pdf_2, decr_form_2=decr_form_2)
                     db.session.add(notice)
                     db.session.commit()
 
@@ -914,6 +926,12 @@ def edit(sno):
                     notice.title = box_title
                     notice.category = category
                     notice.content = content
+                    notice.title_1 = title_1
+                    notice.content_1 = content_1
+                    notice.title_2 = title_2
+                    notice.content_2 = content_2
+                    notice.title_3 = title_3
+                    notice.content_3 = content_3
                     notice.link_youtube_1 = link_youtube_1
                     notice.link_youtube_2 = link_youtube_2
                     notice.link_pdf_1 = link_pdf_1
