@@ -1,3 +1,3 @@
 INSERT INTO notice(
-	sno, category, title, content, title_one=title_one, content_one=content_one img_file, date, link_youtube_1, link_pdf_1, link_form_1, link_youtube_2, link_pdf_2, link_form_2, decr_youtube_2, decr_pdf_2, decr_form_2, slug)
+	sno, category, title, content, title_one, content_one, img_file, date, link_youtube_1, link_pdf_1, link_form_1, link_youtube_2, link_pdf_2, link_form_2, decr_youtube_2, decr_pdf_2, decr_form_2, slug)
 	VALUES (1, 'category of notice', 'title of notice', 'content of notice', 'title of notice', 'content of notice', '20200608_110050_0000.png', '2020-07-19', 'https://dailyblogs2020.herokuapp.com/', 'python tut book.pdf', 'https://dailyblogs2020.herokuapp.com/', '', '', '', '', '', '', 'first-notice');
