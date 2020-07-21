@@ -52,7 +52,9 @@ class Notice(db.Model):
     
     content = db.Column(db.String(120), nullable=False)
 
+    # decr_youtube_3 = db.Column(db.String(80), nullable=False)
     
+    # decr_youtube_4 = db.Column(db.String(120), nullable=False)
    
     link_youtube_1 = db.Column(db.String(12), nullable=False)
     link_youtube_2 = db.Column(db.String(12), nullable=False)
@@ -897,7 +899,8 @@ def edit(sno):
                 title = request.form.get('title')
                 content = request.form.get('content')
 
-                
+                # decr_youtube_3 = request.form.get('decr_youtube_3')
+                # decr_youtube_4 = request.form.get('decr_youtube_4')
                 
                 link_youtube_1 = request.form.get('link_youtube_1')
                 link_youtube_2 = request.form.get('link_youtube_2')
@@ -924,7 +927,9 @@ def edit(sno):
                     
                     notice.content = content
 
+                    # notice.decr_youtube_3 = decr_youtube_3
                     
+                    # notice.decr_youtube_4 = decr_youtube_4
                     
                     notice.link_youtube_1 = link_youtube_1
                     notice.link_youtube_2 = link_youtube_2
